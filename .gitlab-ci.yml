@@ -1,7 +1,7 @@
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
   MAVEN_OPTS: "-Dmaven.repo.local=.m2/repository"
-  JAVA_OPTS: "-Xmx=1g -Duser.timezone=UTC"
+  JAVA_OPTS: "-Duser.timezone=UTC"
 
 cache:
   key: $CI_JOB_NAME
