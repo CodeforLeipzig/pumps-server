@@ -15,7 +15,16 @@ stages:
 build-gradle:
   stage: build
   image: gradle:7.3.3-jdk17
+  cache:
+    key:
+      files:
+        - gradle/wrapper/gradle-wrapper.properties
+    paths:
+      - cache/caches/
+      - cache/notifications/
+      - cache/wrapper/
   script:
+    - ./gradlew --build-cache --gradle-user-home cache/ check
     - gradle build
   artifacts:
     name: "pumps-server"
