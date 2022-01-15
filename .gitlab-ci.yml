@@ -25,8 +25,7 @@ build-gradle:
       - cache/wrapper/
   script:
     - chmod +x ./gradlew
-    - ./gradlew --build-cache --gradle-user-home cache/ check
-    - gradle build
+    - ./gradlew --build-cache --gradle-user-home cache/ build
   artifacts:
     name: "pumps-server"
     expire_in: 15 min
