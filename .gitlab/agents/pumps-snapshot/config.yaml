@@ -1,0 +1,5 @@
+gitops:
+  manifest_projects:
+    - id: "leipzig-pumps/pumps-server"
+      paths:
+        - glob: 'kubernetes/deployment-snapshot.yaml'

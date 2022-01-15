@@ -1,0 +1,22 @@
+version: '3'
+services:
+
+  pumps-server:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ${IMAGES_PATH}:/mnt/images
+    depends_on:
+      - db
+
+  db:
+    image: postgis/postgis:14-master
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "pumps"
+      POSTGRES_USER: "pumper"
+      POSTGRES_PASSWORD: "pumPern1ckel"
+    container_name: pumps-postgresql-docker

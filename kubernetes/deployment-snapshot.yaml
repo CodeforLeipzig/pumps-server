@@ -1,0 +1,116 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: leipzig-pumps-config
+  namespace: leipzig-pumps
+data:
+  document_root: "/mnt/images"
+  mount_directory: "/mnt/images"
+  database_hostname: "pumps-postgresql-service"
+  database_name: "pumps"
+  database_port: "5432"
+  database_username: "pumper"
+  spring_profiles_active: "develop"
+  aws_region: "eu-central-1"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: leipzig-pumps-secrets
+  namespace: leipzig-pumps
+type: Opaque
+data:
+  database_password: pumPern1ckel
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: leipzig-pumps
+    version: v1
+  name: leipzig-pumps
+  namespace: leipzig-pumps
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: leipzig-pumps
+  template:
+    metadata:
+      labels:
+        app: leipzig-pumps
+    spec:
+      volumes:
+        - { name: "images",  emptyDir: {}}
+      imagePullSecrets:
+        - name: gitlab-registry
+      containers:
+        - name: leipzig-pumps
+          image: https://gitlab.com/leipzig-pumps/pumps-server:latest
+          env:
+            - name: MOUNT_DIRECTORY
+              valueFrom:
+                configMapKeyRef:
+                  name: leipzig-pumps-config
+                  key: mount_directory
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: leipzig-pumps-config
+                  key: database_name
+            - name: DB_HOSTNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: leipzig-pumps-config
+                  key: database_hostname
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: leipzig-pumps-secrets
+                  key: database_password
+            - name: DB_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: leipzig-pumps-config
+                  key: database_port
+            - name: DB_USERNAME
+              valueFrom:
+                configMapKeyRef:
+                  name: leipzig-pumps-config
+                  key: database_username
+            - name: SPRING_PROFILES_ACTIVE
+              valueFrom:
+                configMapKeyRef:
+                  name: leipzig-pumps-config
+                  key: spring_profiles_active
+            - name: REGION
+              valueFrom:
+                configMapKeyRef:
+                  name: leipzig-pumps-config
+                  key: aws_region
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: "images"
+              mountPath: "/mnt/images"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: leipzig-pumps-service
+  namespace: leipzig-pumps
+  labels:
+    app: leipzig-pumps-service
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: pumps-server-develop.codeforleipzig.de
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "https"
+spec:
+  type: LoadBalancer
+  selector:
+    app: pumps-server
+  ports:
+    - protocol: TCP
+      name: pumps-server-service-port
+      port: 8080
+      targetPort: 8080
