@@ -14,7 +14,7 @@ stages:
 
 build-gradle:
   stage: build
-  image: gradle:7.3.3-jdk11
+  image: gradle:7.3.3-jdk17
   script:
     - gradle build
   artifacts:
