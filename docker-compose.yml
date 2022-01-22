@@ -16,7 +16,17 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: "pumps"
-      POSTGRES_USER: "pumper"
-      POSTGRES_PASSWORD: "pumPern1ckel"
+      POSTGRES_DB: pumps
+      POSTGRES_USER: pumper
+      POSTGRES_PASSWORD: pumPern1ckel
     container_name: pumps-postgresql-docker
+    volumes:
+      - /home/joerg/pgdata:/var/lib/postgresql/data
+
+  pgadmin4:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: a@b.de
+      PGADMIN_DEFAULT_PASSWORD: geheim
+    ports:
+      - "81:80"

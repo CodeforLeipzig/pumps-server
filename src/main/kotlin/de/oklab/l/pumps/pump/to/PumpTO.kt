@@ -2,11 +2,13 @@ package de.oklab.l.pumps.pump.to
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import de.oklab.l.pumps.pump.bo.Pump
+import org.locationtech.jts.geom.Coordinate
+import org.locationtech.jts.geom.GeometryFactory
 
 data class PumpTO (
 
     @JsonProperty("Nummer [Anke]")
-    val numberAnke: String? = null,
+    val numberAnke: String,
 
     @JsonProperty("offizielle Nummer")
     val numberOfficial: String? = null,
@@ -21,10 +23,10 @@ data class PumpTO (
     val address: String? = null,
 
     @JsonProperty("Koordinaten NS")
-    val lat: String? = null,
+    val lat: Double,
 
     @JsonProperty("Koordinaten OW")
-    val lon: String? = null,
+    val lon: Double,
 
     @JsonProperty("Datierung")
     val date: String? = null,
@@ -47,7 +49,7 @@ data class PumpTO (
     @JsonProperty("OsmId")
     val osmId: String? = null
 ) {
-    fun toEntity(): Pump = Pump(
+    fun toEntity(geometryFactory: GeometryFactory): Pump = Pump(
         numberAnke = numberAnke,
         numberOfficial = numberOfficial,
         name = name,
@@ -61,6 +63,27 @@ data class PumpTO (
         feedingDescription = feedingDescription,
         controlsDescription = controlsDescription,
         wikipediaId = wikipediaId,
-        osmId = osmId
+        osmId = osmId,
+        geom = geometryFactory.createPoint(Coordinate(lon, lat))
     )
+
+    companion object {
+
+        fun from(pump: Pump): PumpTO = PumpTO(
+                numberAnke = pump.numberAnke,
+                numberOfficial = pump.numberOfficial,
+                name = pump.name,
+                district = pump.district,
+                address = pump.address,
+                lat = pump.lat,
+                lon = pump.lon,
+                date = pump.date,
+                description = pump.description,
+                stateDescription = pump.stateDescription,
+                feedingDescription = pump.feedingDescription,
+                controlsDescription = pump.controlsDescription,
+                wikipediaId = pump.wikipediaId,
+                osmId = pump.osmId
+        )
+    }
 }

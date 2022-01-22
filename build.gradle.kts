@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.6.2"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	//id("com.netflix.dgs.codegen") version "5.1.16"
+	id("com.netflix.dgs.codegen") version "5.1.16"
 	kotlin("jvm") version "1.6.10"
 	kotlin("plugin.spring") version "1.6.10"
 	kotlin("plugin.jpa") version "1.6.10"
@@ -29,6 +29,9 @@ dependencies {
 	implementation("com.graphql-java:graphiql-spring-boot-starter:5.0.2")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("com.bedatadriven:jackson-datatype-jts:2.4")
+	implementation("com.vividsolutions:jts-core:1.14.0")
+	implementation("org.hibernate:hibernate-spatial:5.6.3.Final")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.session:spring-session-core")

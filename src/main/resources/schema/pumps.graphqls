@@ -1,0 +1,20 @@
+type Query {
+    find(numberAnke: String): [PumpTO]
+}
+
+type PumpTO {
+    numberAnke: String
+    numberOfficial: String
+    name: String
+    district: String
+    address: String
+    lat: Float
+    lon: Float
+    date: String
+    description: String
+    stateDescription: String
+    feedingDescription: String
+    controlsDescription: String
+    wikipediaId: String
+    osmId: String
+}
