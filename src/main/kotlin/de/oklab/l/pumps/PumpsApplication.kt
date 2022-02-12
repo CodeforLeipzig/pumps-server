@@ -7,14 +7,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.context.annotation.Bean
 
+
 @SpringBootApplication
 class PumpsApplication {
 
-	@Bean fun jtsModule(): JtsModule = JtsModule()
+    @Bean
+    fun jtsModule(): JtsModule = JtsModule()
 
-	@Bean fun geometryFactory() = GeometryFactory(PrecisionModel(), 4326)
+    @Bean
+    fun geometryFactory() = GeometryFactory(PrecisionModel(), 4326)
 }
 
 fun main(args: Array<String>) {
-	runApplication<PumpsApplication>(*args)
+    runApplication<PumpsApplication>(*args)
 }

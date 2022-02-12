@@ -14,13 +14,18 @@ import java.io.FileWriter
 import java.text.SimpleDateFormat
 import java.util.*
 
-class GitHistoryWalkerTest {
+class GitHistoryWalkerModuleTest: BaseTest() {
+
+    @Autowired
+    lateinit var treeService: TreeService
 
     @Test
     fun testImport() {
         val objectMapper = jacksonObjectMapper()
         val builder = FileRepositoryBuilder()
-        val repository = builder.setGitDir(File("/media/daten/git/giessdeibohm/.git"))
+        //val dir = "/media/daten/git/giessdeibohm/.git"
+        val dir = "D:/git/giessdeibohm/.git"
+        val repository = builder.setGitDir(File(dir))
                 .readEnvironment()
                 .findGitDir()
                 .build()
@@ -29,7 +34,7 @@ class GitHistoryWalkerTest {
         val relativeFilePath = "docs/geojsons/trees/alle.geojson"
         val targetFileLogs = git.log().add(revisionId).addPath(relativeFilePath).call()
         val sdf = SimpleDateFormat("yyyy-MM-dd")
-        val collectedTrees = mutableListOf<TreeTO>()
+        //val collectedTrees = mutableListOf<TreeTO>()
         val collectedTreeRows = mutableListOf<String>()
         for (targetFileLog in targetFileLogs.reversed()) {
             val reader = repository.newObjectReader()
@@ -40,13 +45,15 @@ class GitHistoryWalkerTest {
             val trees: GeojsonFeatureCollection<TreeTO> = objectMapper.readValue(content, objectMapper.typeFactory.constructParametricType(
                     GeojsonFeatureCollection::class.java, TreeTO::class.java
             ))
+            treeService.importTrees(trees.features.map { it.properties }.map { it.timestamp = targetFileLog.commitTime.toLong().times(1000); it })
             //collectedTrees.addAll(trees.features.map { it.properties })
-            collectedTreeRows.add("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))};${(trees.features.size)}")
+            //collectedTreeRows.add("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))};${(trees.features.size)}")
             //println("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))}: ${(trees.features.size)} trees")
         }
-        FileWriter(File("/home/joerg/Schreibtisch/trees_statistics.csv")).use {
+        /*FileWriter(File("/home/joerg/Schreibtisch/trees_statistics.csv")).use {
             it.write(collectedTreeRows.joinToString("\n"))
-        }
+        }*/
+        //treeService.importTrees(collectedTrees)
     }
 }
 

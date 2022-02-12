@@ -1,12 +1,17 @@
 package de.oklab.l.pumps.tree.bo
 
+import com.bedatadriven.jackson.datatype.jts.serialization.GeometryDeserializer
+import com.bedatadriven.jackson.datatype.jts.serialization.GeometrySerializer
 import com.fasterxml.jackson.annotation.JsonProperty
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
+import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import org.hibernate.annotations.GenericGenerator
+import org.locationtech.jts.geom.Geometry
 import org.locationtech.jts.geom.Point
 import java.util.*
 import javax.persistence.*
 
-@Entity
+@Entity(name = "tree_history")
 data class TreeHistory (
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,6 +35,6 @@ data class TreeHistory (
         val xcoord: Double?,
         val ycoord: Double?,
         val timestamp: Long,
-        @Column(columnDefinition = "geography")
-        val geom: Point
+        @Column(name = "the_geom", columnDefinition = "Geometry")
+        val geom: Geometry
 )

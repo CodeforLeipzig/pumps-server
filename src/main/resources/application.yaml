@@ -2,9 +2,9 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
     hibernate:
-      ddl-auto: none
+      ddl-auto: create
       jdbc:
         lob:
           non_contextual_creation: true

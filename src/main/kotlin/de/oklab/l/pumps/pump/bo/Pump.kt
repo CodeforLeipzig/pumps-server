@@ -1,12 +1,12 @@
 package de.oklab.l.pumps.pump.bo
 
 import org.hibernate.annotations.GenericGenerator
+import org.locationtech.jts.geom.Geometry
 import java.util.*
 import javax.persistence.*
-import org.locationtech.jts.geom.Point
 
 @Entity
-data class Pump (
+data class Pump(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
@@ -29,6 +29,6 @@ data class Pump (
     val controlsDescription: String? = null,
     val wikipediaId: String? = null,
     val osmId: String? = null,
-    @Column(columnDefinition = "geography")
-    val geom: Point
+    @Column(name = "the_geom", columnDefinition = "Geometry")
+    val geom: Geometry
 )

@@ -20,7 +20,7 @@ data class TreeTO(
         val datAbgabe: String?,
         val xcoord: Double?,
         val ycoord: Double?,
-        val timestamp: Long? = null,
+        var timestamp: Long? = null,
 ) {
     fun toEntity(geometryFactory: GeometryFactory): TreeHistory = TreeHistory(
             standortnr = standortnr,
