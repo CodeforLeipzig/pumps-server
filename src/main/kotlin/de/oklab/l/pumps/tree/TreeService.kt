@@ -11,4 +11,6 @@ class TreeService (internal val treeHistoryRepository: TreeHistoryRepository,
     fun importTrees(trees: List<TreeTO>) {
         treeHistoryRepository.saveAll(trees.map { it.toEntity(geometryFactory) })
     }
+
+    fun getCount(): Long = treeHistoryRepository.count()
 }
