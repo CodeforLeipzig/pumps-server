@@ -4,7 +4,7 @@ spring:
       hibernate:
         dialect: org.hibernate.spatial.dialect.postgis.PostgisDialect
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
       jdbc:
         lob:
           non_contextual_creation: true
