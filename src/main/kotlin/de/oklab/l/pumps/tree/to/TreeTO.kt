@@ -52,7 +52,7 @@ data class TreeTO(
             alter = tree.alter,
             datAbgabe = tree.datAbgabe,
             xcoord = tree.xcoord,
-            ycoord = tree.xcoord,
+            ycoord = tree.ycoord,
             timestamp = tree.timestamp,
         )
 
@@ -67,7 +67,7 @@ data class TreeTO(
             alter = treeHistory.alter,
             datAbgabe = treeHistory.datAbgabe,
             xcoord = treeHistory.xcoord,
-            ycoord = treeHistory.xcoord,
+            ycoord = treeHistory.ycoord,
             timestamp = treeHistory.timestamp,
         )
     }

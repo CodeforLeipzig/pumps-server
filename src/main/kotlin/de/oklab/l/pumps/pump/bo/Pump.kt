@@ -14,7 +14,7 @@ data class Pump(
     @GeneratedValue(generator = "UUIDGenerator")
     @Column(updatable = false, nullable = false)
     val externalId: UUID = UUID.randomUUID(),
-    @Column(updatable = false, nullable = false, unique = true)
+    @Column(updatable = false, nullable = false)
     val numberAnke: String,
     val numberOfficial: String? = null,
     val name: String? = null,
@@ -29,6 +29,13 @@ data class Pump(
     val controlsDescription: String? = null,
     val wikipediaId: String? = null,
     val osmId: String? = null,
+    val type: String? = null,
+    val physicalState: String? = null,
+    val detailedPhysicalState: String? = null,
+    val operatingState: String? = null,
+    val lastFeeding: String? = null,
+    val lastControl: String? = null,
+    val wikipediaPage: String? = null,
     @Column(name = "the_geom", columnDefinition = "Geometry")
     val geom: Geometry
 )
