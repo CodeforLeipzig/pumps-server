@@ -30,3 +30,30 @@ services:
       PGADMIN_DEFAULT_PASSWORD: geheim
     ports:
       - "81:80"
+
+  geoserver:
+    image: kartoza/geoserver:2.19.0
+    environment:
+      STABLE_EXTENSIONS: control-flow-plugin,wps-plugin,charts-plugin,vectortiles-plugin,printing-plugin,gdal-plugin
+      DB_BACKEND: POSTGRES
+      HOST: db
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: pumps
+      POSTGRES_USER: pumper
+      POSTGRES_PASS: pumPern1ckel
+      GEOSERVER_DATA_DIR: /mnt/geoserver/data
+      FOOTPRINTS_DATA_DIR: /mnt/geoserver/footprints
+      GEOWEBCACHE_CACHE_DIR: /mnt/geoserver/webcache
+      GEOSERVER_ADMIN_USER: admin
+      GEOSERVER_ADMIN_PASSWORD: geoserveradmin
+      REQUEST_TIMEOUT: 60
+      PARARELL_REQUEST: 100
+      GETMAP: 10
+      REQUEST_EXCEL: 4
+      SINGLE_USER: 6
+      GWC_REQUEST: 16
+      WPS_REQUEST: 1000/d;30s
+    volumes:
+      - ${GEOSERVER_DIR}:/mnt/geoserver
+    ports:
+      - "8600:8080"

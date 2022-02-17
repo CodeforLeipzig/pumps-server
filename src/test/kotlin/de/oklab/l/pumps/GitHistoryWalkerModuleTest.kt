@@ -3,6 +3,7 @@ package de.oklab.l.pumps
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import de.oklab.l.pumps.tree.TreeService
 import de.oklab.l.pumps.tree.to.GeojsonFeatureCollection
+import de.oklab.l.pumps.tree.to.PointGeojsonFeatureCollection
 import de.oklab.l.pumps.tree.to.TreeTO
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder
@@ -42,7 +43,7 @@ class GitHistoryWalkerModuleTest: BaseTest() {
             val blobId = treeWalk.getObjectId(0)
             val objectLoader = reader.open(blobId)
             val content = String(objectLoader.bytes)
-            val trees: GeojsonFeatureCollection<TreeTO> = objectMapper.readValue(content, objectMapper.typeFactory.constructParametricType(
+            val trees: PointGeojsonFeatureCollection<TreeTO> = objectMapper.readValue(content, objectMapper.typeFactory.constructParametricType(
                     GeojsonFeatureCollection::class.java, TreeTO::class.java
             ))
             treeService.importTrees(trees.features.map { it.properties }.map { it.timestamp = targetFileLog.commitTime.toLong().times(1000); it })

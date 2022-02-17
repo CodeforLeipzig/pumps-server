@@ -5,6 +5,7 @@ import de.oklab.l.pumps.pump.PumpService
 import de.oklab.l.pumps.pump.to.PumpTO
 import de.oklab.l.pumps.tree.TreeService
 import de.oklab.l.pumps.tree.to.GeojsonFeatureCollection
+import de.oklab.l.pumps.tree.to.PointGeojsonFeatureCollection
 import de.oklab.l.pumps.tree.to.TreeTO
 import org.eclipse.jgit.api.Git
 import org.eclipse.jgit.storage.file.FileRepositoryBuilder
@@ -27,8 +28,8 @@ class PumpsImporterModuleTest: BaseTest() {
         val objectMapper = jacksonObjectMapper()
         val file = "D:\\git\\leipzig_auf_pump\\docs\\geojsons\\pumps\\alle.geojson"
         val content = FileReader(File(file)).use { it.readText() }
-        val pumps: GeojsonFeatureCollection<PumpTO> = objectMapper.readValue(content, objectMapper.typeFactory.constructParametricType(
-                GeojsonFeatureCollection::class.java, PumpTO::class.java
+        val pumps: PointGeojsonFeatureCollection<PumpTO> = objectMapper.readValue(content, objectMapper.typeFactory.constructParametricType(
+            PointGeojsonFeatureCollection::class.java, PumpTO::class.java
         ))
         for (pump in pumps.features.map { it.properties }) {
             pumpService.create(pump)

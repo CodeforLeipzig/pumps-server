@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PumpsApplicationKt" type="JetRunConfigurationType" nameIsGenerated="true">
+    <envs>
+      <env name="DB_HOST" value="localhost" />
+      <env name="DB_PORT" value="5432" />
+      <env name="DB_NAME" value="pumps" />
+      <env name="DB_USERNAME" value="pumper" />
+      <env name="DB_PASSWORD" value="pumPern1ckel" />
+      <env name="SERVER_PORT" value="8081" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="de.oklab.l.pumps.PumpsApplicationKt" />
+    <module name="pumps.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

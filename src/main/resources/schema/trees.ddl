@@ -7,4 +7,4 @@ from (
 ) maxTimestamp
 inner join tree_history t
 on         t.standortnr = maxTimestamp.standortnr
-and        t.timestamp = maxTimestamp.timestamp
+and        t.timestamp = maxTimestamp.timestamp;
