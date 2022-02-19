@@ -1,4 +1,4 @@
-FROM FROM openjdk:17-oracle
+FROM openjdk:17-oracle
 WORKDIR /opt
 ENV PORT 8080
 EXPOSE 8080
