@@ -3,10 +3,10 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
 	id("org.springframework.boot") version "2.6.2"
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	id("com.netflix.dgs.codegen") version "5.1.16"
 	kotlin("jvm") version "1.6.10"
 	kotlin("plugin.spring") version "1.6.10"
 	kotlin("plugin.jpa") version "1.6.10"
+	//id("com.netflix.dgs.codegen") version "5.1.16"
 }
 
 group = "de.oklab.l"
@@ -18,14 +18,14 @@ repositories {
 }
 
 dependencies {
+	implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:4.9.15"))
+	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-data-rest")
 	implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
-	implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:4.9.15"))
-	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter")
 	implementation("com.graphql-java:graphiql-spring-boot-starter:5.0.2")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

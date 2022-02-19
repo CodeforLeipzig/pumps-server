@@ -28,12 +28,16 @@ class TreeService(
 
     fun getHistoryPaged(page: Int, pageSize: Int): List<TreeTO> {
         val results = treeHistoryRepository.findPaged(PageRequest.of(page, pageSize))
-        return results.get().map { TreeTO.fromEntity(it) }.toList()
+        val stream = results.get().map { TreeTO.fromEntity(it) }
+        val array = stream.toArray().filterIsInstance<TreeTO>()
+        return array.toList()
     }
 
     fun getCurrentPaged(page: Int, pageSize: Int): List<TreeTO> {
         val results = treeRepository.findPaged(PageRequest.of(page, pageSize))
-        return results.get().map { TreeTO.fromEntity(it) }.toList()
+        val stream = results.get().map { TreeTO.fromEntity(it) }
+        val array = stream.toArray().filterIsInstance<TreeTO>()
+        return array.toList()
     }
 
     fun getTreeAtTimestamp(treeId: String, timestamp: Long): TreeTO? =
