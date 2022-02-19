@@ -25,7 +25,7 @@ build-gradle:
       - cache/wrapper/
   script:
     - chmod +x ./gradlew
-    - ./gradlew --build-cache --gradle-user-home cache/ check
+    - ./gradlew --build-cache --gradle-user-home cache/ check -x test
     - gradle build -x test
   artifacts:
     name: "pumps-server"
