@@ -1,0 +1,36 @@
+https://query.wikidata.org/querybuilder/?uselang=de
+
+parent taxon (= übergeordnetes Taxon, p:P171)  passend zu  Quercus (= Eichen, wd:Q12004)
+
+https://query.wikidata.org/#SELECT%20DISTINCT%20?item%20?itemLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase:label%20%7B%20bd:serviceParam%20wikibase:language%20"%5BAUTO_LANGUAGE%5D".%20%7D%0A%20%20%7B%0A%20%20%20%20SELECT%20DISTINCT%20?item%20WHERE%20%7B%0A%20%20%20%20%20%20?item%20p:P171%20?statement0.%0A%20%20%20%20%20%20?statement0%20(ps:P171)%20wd:Q12004.%0A%20%20%20%20%7D%0A%20%20%20%20LIMIT%2010%0A%20%20%7D%0A%7D
+
+SELECT DISTINCT ?item ?itemLabel WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+  {
+    SELECT DISTINCT ?item WHERE {
+      ?item p:P171 ?statement0.
+      ?statement0 (ps:P171) wd:Q12004.
+    }
+    LIMIT 10
+  }
+}
+
+---
+
+https://query.wikidata.org/querybuilder/?uselang=de
+
+taxon name (= wissenschaftlicher Name, p:P225)  passend zu  Abies species
+
+
+https://query.wikidata.org/#SELECT%20DISTINCT%20?item%20?itemLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase:label%20%7B%20bd:serviceParam%20wikibase:language%20"%5BAUTO_LANGUAGE%5D".%20%7D%0A%20%20%7B%0A%20%20%20%20SELECT%20DISTINCT%20?item%20WHERE%20%7B%0A%20%20%20%20%20%20?item%20p:P225%20?statement0.%0A%20%20%20%20%20%20?statement0%20(ps:P225)%20"Abies%20species".%0A%20%20%20%20%7D%0A%20%20%20%20LIMIT%2010%0A%20%20%7D%0A%7D
+
+SELECT DISTINCT ?item ?itemLabel WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+  {
+    SELECT DISTINCT ?item WHERE {
+      ?item p:P225 ?statement0.
+      ?statement0 (ps:P225) "Abies species".
+    }
+    LIMIT 10
+  }
+}
