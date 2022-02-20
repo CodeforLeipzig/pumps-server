@@ -31,7 +31,7 @@ build-gradle:
     name: "pumps-server"
     expire_in: 15 min
     paths:
-      - target/*.jar
+      - build/libs/*-SNAPSHOT.jar
 
 trigger-deploy-pipeline:
   stage: deploy
