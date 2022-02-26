@@ -34,3 +34,6 @@
  * tech stack
    * [Svelte](https://svelte.dev)
    * [Leaflet](https://leafletjs.com)
+
+## Charts
+ * [Tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/2/)

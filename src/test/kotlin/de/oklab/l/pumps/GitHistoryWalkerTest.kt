@@ -42,6 +42,7 @@ class GitHistoryWalkerTest {
                 PointGeojsonFeatureCollection::class.java, TreeTO::class.java
             ))
             //collectedTrees.addAll(trees.features.map { it.properties })
+
             collectedTreeRows.add("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))};${(trees.features.size)}")
             //println("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))}: ${(trees.features.size)} trees")
         }

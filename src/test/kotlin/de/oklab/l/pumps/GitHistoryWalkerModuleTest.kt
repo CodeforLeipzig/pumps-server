@@ -1,8 +1,10 @@
 package de.oklab.l.pumps
 
+import com.fasterxml.jackson.databind.module.SimpleModule
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import de.oklab.l.pumps.tree.TreeService
-import de.oklab.l.pumps.tree.to.GeojsonFeatureCollection
+import de.oklab.l.pumps.tree.to.Geometry
+import de.oklab.l.pumps.tree.to.GeometryDeserializer
 import de.oklab.l.pumps.tree.to.PointGeojsonFeatureCollection
 import de.oklab.l.pumps.tree.to.TreeTO
 import org.eclipse.jgit.api.Git
@@ -11,9 +13,8 @@ import org.eclipse.jgit.treewalk.TreeWalk
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import java.io.File
-import java.io.FileWriter
 import java.text.SimpleDateFormat
-import java.util.*
+
 
 class GitHistoryWalkerModuleTest: BaseTest() {
 
@@ -23,6 +24,9 @@ class GitHistoryWalkerModuleTest: BaseTest() {
     @Test
     fun testImport() {
         val objectMapper = jacksonObjectMapper()
+        val module = SimpleModule()
+        module.addDeserializer(Geometry::class.java, GeometryDeserializer())
+        objectMapper.registerModule(module)
         val builder = FileRepositoryBuilder()
         //val dir = "/media/daten/git/giessdeibohm/.git"
         val dir = "D:/git/giessdeibohm/.git"
@@ -44,9 +48,9 @@ class GitHistoryWalkerModuleTest: BaseTest() {
             val objectLoader = reader.open(blobId)
             val content = String(objectLoader.bytes)
             val trees: PointGeojsonFeatureCollection<TreeTO> = objectMapper.readValue(content, objectMapper.typeFactory.constructParametricType(
-                    GeojsonFeatureCollection::class.java, TreeTO::class.java
+                PointGeojsonFeatureCollection::class.java, TreeTO::class.java
             ))
-            treeService.importTrees(trees.features.map { it.properties }.map { it.timestamp = targetFileLog.commitTime.toLong().times(1000); it })
+            treeService.importTrees(trees.features.map { it.properties }.map { it.timestamp = targetFileLog.commitTime.toLong().times(1000); it }.filter { it.timestamp != null && it.timestamp!! > 1644596851000 })
             //collectedTrees.addAll(trees.features.map { it.properties })
             //collectedTreeRows.add("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))};${(trees.features.size)}")
             //println("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))}: ${(trees.features.size)} trees")
