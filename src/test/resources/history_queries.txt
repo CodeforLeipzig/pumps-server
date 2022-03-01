@@ -1,0 +1,60 @@
+# Filter Messe
+
+select to_char(to_timestamp(timestamp/1000), 'yyyy-mm-dd') as Datum, count(*) as Anzahl
+from tree_history
+where ortsteil != 'Wiederitzsch (Messe)' AND NOT length(ortsteil) = 0
+group by timestamp
+order by timestamp;
+
+
+# Tree count by district and week
+
+select ortsteil, to_char(to_timestamp(timestamp/1000), 'yyyy-mm-dd') as Datum, count(*) as Anzahl
+from tree_history
+group by ortsteil, timestamp
+order by ortsteil, timestamp;
+
+
+# Tree count by week
+
+select to_char(to_timestamp(timestamp/1000), 'yyyy-mm-dd') as Datum, count(*) as Anzahl
+from tree_history
+group by timestamp
+order by timestamp;
+
+
+# Tree count by week for Neustadt-Neuschönefeld
+
+select to_char(to_timestamp(timestamp/1000), 'yyyy-mm-dd') as Datum, count(*) as Anzahl
+from tree_history
+where ortsteil = 'Neustadt-Neuschönefeld'
+group by timestamp
+order by timestamp;
+
+
+# List all places where a tree exists at 2021-04-25 but now (2022-02-25) no tree exists anymore
+
+select *
+from tree_history t1
+where t1.ortsteil = 'Neustadt-Neuschönefeld'
+and to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2021-04-25'
+and t1.standortnr NOT IN (
+select t2.standortnr
+from tree_history t2
+where t2.ortsteil = 'Neustadt-Neuschönefeld'
+and to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') like '2022-02-25'
+)
+
+
+# List all places where a tree in Neustadt-Neuschönefeld at 2021-04-25 had a different plant year than now (2022-02-25) (i.e. it was replaced in the meanwhile)
+
+select *
+from tree_history t1 JOIN (
+select *
+from tree_history t2
+where t2.ortsteil = 'Neustadt-Neuschönefeld'
+and to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') like '2022-02-25'
+) AS t2 ON t2.standortnr = t1.standortnr
+where t1.ortsteil = 'Neustadt-Neuschönefeld'
+and to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2021-04-25'
+and t1.pflanzjahr != t2.pflanzjahr
