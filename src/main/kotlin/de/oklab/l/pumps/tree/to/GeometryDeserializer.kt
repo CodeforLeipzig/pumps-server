@@ -19,9 +19,10 @@ class GeometryDeserializer : StdDeserializer<Geometry<*>>(Geometry::class.java) 
                 coordinates = coordinates.filterIsInstance<DoubleNode>().map { it.doubleValue().toFloat() })
         } else if (type.textValue().contentEquals("Polygon")) {
             PolygonGeometry(
-                coordinates = coordinates.filterIsInstance<ArrayNode>().map {
-                    coord -> coord.filterIsInstance<DoubleNode>().map { it.doubleValue().toFloat() }
-                }.toList()
+                coordinates = coordinates.filterIsInstance<ArrayNode>().flatMap {
+                    coords -> coords.filterIsInstance<ArrayNode>().map { coord ->
+                    coord.filterIsInstance<DoubleNode>().map { it.doubleValue().toFloat() }
+                }}.toList()
             )
         } else {
             PointGeometry(

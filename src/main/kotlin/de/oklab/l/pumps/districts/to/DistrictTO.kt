@@ -7,5 +7,5 @@ data class DistrictTO (
     val name: String? = null,
     @JsonProperty("OT")
     val ortsteil: String? = null,
-    var coords: List<List<List<Float>>>? = null,
+    var coords: List<List<Float>>? = null,
 )
