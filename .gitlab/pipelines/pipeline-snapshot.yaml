@@ -41,7 +41,7 @@ deploy-develop:
     NAMESPACE_SLUG: leipzig-pumps
   script:
     - kubectl config get-contexts
-    - kubectl config use-context leipzig-pumps/pumps-server:pumps-server-develop
+    - kubectl config use-context leipzig-pumps/pumps-server:pumps-snapshot
     - kubectl get namespaces
     - kubectl get pods -n gitlab-kubernetes-agent
     - kubectl create namespace $NAMESPACE_SLUG --dry-run=client -o yaml | kubectl apply -f -

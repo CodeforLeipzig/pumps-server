@@ -1,25 +1,82 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
+  name: postgis-config
+  namespace: leipzig-pumps
+data:
+  database: "pumps"
+  user: "pumper"
+  password: "pumPern1ckel"
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgis
+  namespace: leipzig-pumps
+  labels:
+    name: postgis
+spec:
+  containers:
+  - name: postgis
+    image: postgis/postgis:14-master
+    env:
+    - name: POSTGRES_DB
+      valueFrom:
+        configMapKeyRef:
+          name: postgis-config
+          key: database
+    - name: POSTGRES_USER
+      valueFrom:
+        configMapKeyRef:
+          name: postgis-config
+          key: user
+    - name: POSTGRES_PASSWORD
+      valueFrom:
+        configMapKeyRef:
+          name: postgis-config
+          key: password
+    ports:
+    - name: postgre
+      containerPort: 5432
+      protocol: TCP
+#    volumeMounts:
+#    - name: postgis-storage
+#      mountPath: /var/lib/postgresql/data
+#  volumes:
+#  - name: postgis-storage
+#    persistentVolumeClaim:
+#      claimName: postgis-storage-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgis-service
+  namespace: leipzig-pumps
+  labels:
+    app: postgis-service
+spec:
+  selector:
+    name: postgis
+  ports:
+    - protocol: TCP
+      name: postgre-protocol
+      port: 5432
+      targetPort: 5432
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
   name: leipzig-pumps-config
   namespace: leipzig-pumps
 data:
   document_root: "/mnt/images"
   mount_directory: "/mnt/images"
-  database_hostname: "pumps-postgresql-service"
+  database_hostname: "postgis-service"
   database_name: "pumps"
   database_port: "5432"
   database_username: "pumper"
+  database_password: "pumPern1ckel"
   spring_profiles_active: "develop"
----
-apiVersion: v1
-kind: Secret
-metadata:
-  name: leipzig-pumps-secrets
-  namespace: leipzig-pumps
-type: Opaque
-data:
-  database_password: pumPern1ckel
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -45,7 +102,7 @@ spec:
         - name: gitlab-registry
       containers:
         - name: leipzig-pumps
-          image: https://gitlab.com/leipzig-pumps/pumps-server:latest
+          image: registry.gitlab.com/leipzig-pumps/pumps-server:latest
           env:
             - name: MOUNT_DIRECTORY
               valueFrom:
@@ -57,15 +114,15 @@ spec:
                 configMapKeyRef:
                   name: leipzig-pumps-config
                   key: database_name
-            - name: DB_HOSTNAME
+            - name: DB_HOST
               valueFrom:
                 configMapKeyRef:
                   name: leipzig-pumps-config
                   key: database_hostname
             - name: DB_PASSWORD
               valueFrom:
-                secretKeyRef:
-                  name: leipzig-pumps-secrets
+                configMapKeyRef:
+                  name: leipzig-pumps-config
                   key: database_password
             - name: DB_PORT
               valueFrom:
@@ -95,14 +152,32 @@ metadata:
   namespace: leipzig-pumps
   labels:
     app: leipzig-pumps-service
-  annotations:
-    external-dns.alpha.kubernetes.io/hostname: pumps-server-develop.codeforleipzig.de
 spec:
-  type: LoadBalancer
+  type: NodePort  
   selector:
     app: pumps-server
   ports:
-    - protocol: TCP
-      name: pumps-server-service-port
-      port: 443
+    - port: 8080
       targetPort: 8080
+      protocol: TCP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pumps-leipzig-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: pumps-server
+  rules:
+  - host: pumps-server-develop.codeforleipzig.de
+    http:
+      paths:
+      - path: "/"
+        pathType: Prefix
+        backend:
+          service:
+            name: leipzig-pumps-service
+            port:
+              number: 8080
+
