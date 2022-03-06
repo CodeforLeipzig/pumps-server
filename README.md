@@ -20,6 +20,7 @@
    * [OpenStack](https://www.openstack.org) (planned cloud platform)
    * [Kubernetes](https://kubernetes.io/) (planned cloud container platform)
    * [FugaCloud](https://fuga.cloud) (planned cloud platform)
+ * See [deploy](https://gitlab.com/leipzig-pumps/deploy) for deployment documentation
 
 ## pumps frontend
 
@@ -36,4 +37,5 @@
    * [Leaflet](https://leafletjs.com)
 
 ## Charts
- * [Tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/2/)
+ * [Tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/3/)
+ * [Tree count in Leipzig splitted by districts (selection)](https://datawrapper.dwcdn.net/ifuls/1/)

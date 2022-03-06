@@ -79,7 +79,7 @@ class GenerateOrtsteilQuery {
 
     private fun query(ortsteile: List<String>) : String {
         return """
-           select ${select(ortsteile)} from
+           select ot0.Datum, ${select(ortsteile)} from
            ${combine(ortsteile)} 
         """.trimIndent()
     }
