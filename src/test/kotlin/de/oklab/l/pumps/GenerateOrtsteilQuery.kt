@@ -74,7 +74,7 @@ class GenerateOrtsteilQuery {
             "Zentrum-Südost",
             "Zentrum-West"
         )
-        FileWriter(File("D:/query.txt"), Charset.forName("UTF-8")).use { it.write(query(ortsteile)) }
+        FileWriter(File("D:/query.txt"), Charset.forName("UTF-8")).use { it.write(query(ortsteile.subList(50, ortsteile.size))) }
     }
 
     private fun query(ortsteile: List<String>) : String {

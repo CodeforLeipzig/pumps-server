@@ -37,5 +37,5 @@
    * [Leaflet](https://leafletjs.com)
 
 ## Charts
- * [Tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/3/)
- * [Tree count in Leipzig splitted by districts (selection)](https://datawrapper.dwcdn.net/ifuls/1/)
+ * [Tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/4/)
+ * [Tree count in Leipzig splitted by districts](https://datawrapper.dwcdn.net/ifuls/2/)

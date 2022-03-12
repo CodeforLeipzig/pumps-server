@@ -19,6 +19,7 @@ order by ortsteil, timestamp;
 
 select to_char(to_timestamp(timestamp/1000), 'yyyy-mm-dd') as Datum, count(*) as Anzahl
 from tree_history
+where timestamp > 1617307710000
 group by timestamp
 order by timestamp;
 
