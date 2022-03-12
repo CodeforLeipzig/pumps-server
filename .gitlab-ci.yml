@@ -44,7 +44,6 @@ docker-package:
       alias: docker
   needs:
     - job: build-gradle
-      pipeline: $PARENT_PIPELINE_ID
       artifacts: true
   variables:
     DOCKER_BUILDKIT: 1

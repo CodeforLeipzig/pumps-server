@@ -57,3 +57,14 @@ services:
       - ${GEOSERVER_DIR}:/mnt/geoserver
     ports:
       - "8600:8080"
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:14.0.0
+    command: -c standalone.xml
+    environment:
+      DB_VENDOR: h2
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+    ports:
+      - 8080:8080
+      - 8443:8443
