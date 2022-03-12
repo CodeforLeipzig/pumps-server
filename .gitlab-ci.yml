@@ -10,6 +10,7 @@ cache:
 
 stages:
   - build
+  - docker
   - deploy
 
 build-gradle:
@@ -33,10 +34,30 @@ build-gradle:
     paths:
       - build/libs/*-SNAPSHOT.jar
 
-trigger-deploy-pipeline:
-  stage: deploy
-  trigger:
-    include:
-      - local: .gitlab/pipelines/pipeline-snapshot.yaml
+docker-package:
+  stage: docker
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  image: docker:stable-dind
+  services:
+    - name: docker:stable-dind
+      alias: docker
+  needs:
+    - job: build-gradle
+      pipeline: $PARENT_PIPELINE_ID
+      artifacts: true
   variables:
-    PARENT_PIPELINE_ID: $CI_PIPELINE_ID
+    DOCKER_BUILDKIT: 1
+  script:
+    - ls -halt
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build --tag "${CI_REGISTRY_IMAGE}" .
+    - docker push $CI_REGISTRY_IMAGE
+
+deploy:
+  stage: deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  trigger:
+    project: 'leipzig-pumps/deploy'
+    branch: main
