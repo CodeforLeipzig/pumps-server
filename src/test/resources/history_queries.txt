@@ -59,3 +59,12 @@ and to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') like '2022-02-25'
 where t1.ortsteil = 'Neustadt-Neuschönefeld'
 and to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2021-04-25'
 and t1.pflanzjahr != t2.pflanzjahr
+
+
+# Tree count by species
+
+select gattung, to_char(to_timestamp(timestamp/1000), 'yyyy-mm-dd') as Datum, count(*) as Anzahl
+from tree_history
+where timestamp > 1617307710000
+group by gattung, timestamp
+order by gattung, timestamp;

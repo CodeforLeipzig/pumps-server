@@ -1,0 +1,47 @@
+with gattungen as
+(
+    select gattung,
+    to_char(to_timestamp(timestamp/1000), 'yyyy-mm-dd') as Datum,
+    count(*) as Anzahl
+    from tree_history
+    where timestamp > 1617307710000
+    group by gattung, timestamp
+    order by gattung, timestamp
+)
+
+-- 8
+select gt0.Datum, gt0.Anzahl as "Abies", gt1.Anzahl as "Acer", gt2.Anzahl as "Aesculus", gt3.Anzahl as "Ailanthus", gt4.Anzahl as "Alnus", gt5.Anzahl as "Amelanchier", gt6.Anzahl as "Betula", gt7.Anzahl as "Carpinus" from
+(select Datum, Anzahl from gattungen where gattung = 'Abies') as gt0 join (select Datum, Anzahl from gattungen where gattung = 'Acer') as gt1 on gt0.Datum = gt1.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Aesculus') as gt2 on gt1.Datum = gt2.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Ailanthus') as gt3 on gt2.Datum = gt3.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Alnus') as gt4 on gt3.Datum = gt4.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Amelanchier') as gt5 on gt4.Datum = gt5.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Betula') as gt6 on gt5.Datum = gt6.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Carpinus') as gt7 on gt6.Datum = gt7.Datum
+
+-- 16
+select gt0.Datum, gt0.Anzahl as "Castanea", gt1.Anzahl as "Catalpa", gt2.Anzahl as "Celtis", gt3.Anzahl as "Cornus", gt4.Anzahl as "Corylus", gt5.Anzahl as "Crataegus", gt6.Anzahl as "Cydonia", gt7.Anzahl as "Elaeagnus" from
+(select Datum, Anzahl from gattungen where gattung = 'Castanea') as gt0 join (select Datum, Anzahl from gattungen where gattung = 'Catalpa') as gt1 on gt0.Datum = gt1.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Celtis') as gt2 on gt1.Datum = gt2.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Cornus') as gt3 on gt2.Datum = gt3.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Corylus') as gt4 on gt3.Datum = gt4.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Crataegus') as gt5 on gt4.Datum = gt5.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Cydonia') as gt6 on gt5.Datum = gt6.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Elaeagnus') as gt7 on gt6.Datum = gt7.Datum
+
+-- 24
+select gt0.Datum, gt0.Anzahl as "Eriolobus", gt1.Anzahl as "Fagus", gt2.Anzahl as "Fraxinus", gt3.Anzahl as "Ginkgo", gt4.Anzahl as "Gleditsia", gt5.Anzahl as "Hippophae", gt6.Anzahl as "Ilex", gt7.Anzahl as "Juglans" from
+(select Datum, Anzahl from gattungen where gattung = 'Eriolobus') as gt0 left join (select Datum, Anzahl from gattungen where gattung = 'Fagus') as gt1 on gt0.Datum = gt1.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Fraxinus') as gt2 on gt1.Datum = gt2.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Ginkgo') as gt3 on gt2.Datum = gt3.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Gleditsia') as gt4 on gt3.Datum = gt4.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Hippophae') as gt5 on gt4.Datum = gt5.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Ilex') as gt6 on gt5.Datum = gt6.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Juglans') as gt7 on gt6.Datum = gt7.Datum
+
+-- 32
+select gt0.Datum, gt0.Anzahl as "Juniperus", gt1.Anzahl as "Koelreuteria", gt2.Anzahl as "Larix", gt3.Anzahl as "Liquidambar", gt4.Anzahl as "Liriodendron", gt5.Anzahl as "Magnolia", gt6.Anzahl as "Malus", gt7.Anzahl as "Mespilus" from
+(select Datum, Anzahl from gattungen where gattung = 'Juniperus') as gt0 join (select Datum, Anzahl from gattungen where gattung = 'Koelreuteria') as gt1 on gt0.Datum = gt1.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Larix') as gt2 on gt1.Datum = gt2.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Liquidambar') as gt3 on gt2.Datum = gt3.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Liriodendron') as gt4 on gt3.Datum = gt4.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Magnolia') as gt5 on gt4.Datum = gt5.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Malus') as gt6 on gt5.Datum = gt6.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Mespilus') as gt7 on gt6.Datum = gt7.Datum
+
+-- 40
+select gt0.Datum, gt0.Anzahl as "Metasequoia", gt1.Anzahl as "Morus", gt2.Anzahl as "nicht", gt3.Anzahl as "Ostrya", gt4.Anzahl as "Picea", gt5.Anzahl as "Pinus", gt6.Anzahl as "Platanus", gt7.Anzahl as "Populus" from
+(select Datum, Anzahl from gattungen where gattung = 'Metasequoia') as gt0 left join (select Datum, Anzahl from gattungen where gattung = 'Morus') as gt1 on gt0.Datum = gt1.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'nicht') as gt2 on gt1.Datum = gt2.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Ostrya') as gt3 on gt2.Datum = gt3.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Picea') as gt4 on gt3.Datum = gt4.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Pinus') as gt5 on gt4.Datum = gt5.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Platanus') as gt6 on gt5.Datum = gt6.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Populus') as gt7 on gt6.Datum = gt7.Datum
+
+select gt3.Datum, gt3.Anzahl as "Ostrya", gt4.Anzahl as "Picea", gt5.Anzahl as "Pinus", gt6.Anzahl as "Platanus", gt7.Anzahl as "Populus" from
+(select Datum, Anzahl from gattungen where gattung = 'Ostrya') as gt3 left join (select Datum, Anzahl from gattungen where gattung = 'Picea') as gt4 on gt3.Datum = gt4.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Pinus') as gt5 on gt4.Datum = gt5.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Platanus') as gt6 on gt5.Datum = gt6.Datum  left join (select Datum, Anzahl from gattungen where gattung = 'Populus') as gt7 on gt6.Datum = gt7.Datum
+
+
+-- 48
+select gt0.Datum, gt0.Anzahl as "Prunus", gt1.Anzahl as "Pseudotsuga", gt2.Anzahl as "Pyracantha", gt3.Anzahl as "Pyrus", gt4.Anzahl as "Quercus", gt5.Anzahl as "Rhus", gt6.Anzahl as "Robinia", gt7.Anzahl as "Salix" from
+(select Datum, Anzahl from gattungen where gattung = 'Prunus') as gt0 join (select Datum, Anzahl from gattungen where gattung = 'Pseudotsuga') as gt1 on gt0.Datum = gt1.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Pyracantha') as gt2 on gt1.Datum = gt2.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Pyrus') as gt3 on gt2.Datum = gt3.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Quercus') as gt4 on gt3.Datum = gt4.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Rhus') as gt5 on gt4.Datum = gt5.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Robinia') as gt6 on gt5.Datum = gt6.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Salix') as gt7 on gt6.Datum = gt7.Datum
+
+-- 56
+select gt0.Datum, gt0.Anzahl as "Sambucus", gt1.Anzahl as "Sophora", gt2.Anzahl as "Sorbus", gt3.Anzahl as "Syringa", gt4.Anzahl as "Tamarix", gt5.Anzahl as "Taxus", gt6.Anzahl as "Tetradium", gt7.Anzahl as "Thuja" from
+(select Datum, Anzahl from gattungen where gattung = 'Sambucus') as gt0 join (select Datum, Anzahl from gattungen where gattung = 'Sophora') as gt1 on gt0.Datum = gt1.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Sorbus') as gt2 on gt1.Datum = gt2.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Syringa') as gt3 on gt2.Datum = gt3.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Tamarix') as gt4 on gt3.Datum = gt4.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Taxus') as gt5 on gt4.Datum = gt5.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Tetradium') as gt6 on gt5.Datum = gt6.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Thuja') as gt7 on gt6.Datum = gt7.Datum
+
+-- 61
+select gt0.Datum, gt0.Anzahl as "Tilia", gt1.Anzahl as "Ulmus", gt2.Anzahl as "unbekannt", gt3.Anzahl as "waldartiger", gt4.Anzahl as "Zelkova" from
+(select Datum, Anzahl from gattungen where gattung = 'Tilia') as gt0 join (select Datum, Anzahl from gattungen where gattung = 'Ulmus') as gt1 on gt0.Datum = gt1.Datum  join (select Datum, Anzahl from gattungen where gattung = 'unbekannt') as gt2 on gt1.Datum = gt2.Datum  join (select Datum, Anzahl from gattungen where gattung = 'waldartiger') as gt3 on gt2.Datum = gt3.Datum  join (select Datum, Anzahl from gattungen where gattung = 'Zelkova') as gt4 on gt3.Datum = gt4.Datum
+

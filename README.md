@@ -39,3 +39,6 @@
 ## Charts
  * [Tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/4/)
  * [Tree count in Leipzig splitted by districts](https://datawrapper.dwcdn.net/ifuls/2/)
+ * [Tree count changes April 2021 to March 2022 in Leipzig splitted by districts](https://datawrapper.dwcdn.net/uuNlj/1/)
+ * [Tree count in Leipzig splitted by species](https://datawrapper.dwcdn.net/fXwZM/1/)
+ * [Tree count changes April 2021 to March 2022 in Leipzig splitted by species](https://datawrapper.dwcdn.net/yUBUD/1/)
