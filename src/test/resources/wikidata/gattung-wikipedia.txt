@@ -1,0 +1,64 @@
+Abies: https://de.wikipedia.org/wiki/Tannen
+Acer: https://de.wikipedia.org/wiki/Ahorne
+Aesculus: https://de.wikipedia.org/wiki/Rosskastanien
+Ailanthus: https://de.wikipedia.org/wiki/Götterbäume
+Alnus: https://de.wikipedia.org/wiki/Erlen (Gattung)
+Amelanchier: https://de.wikipedia.org/wiki/Felsenbirnen
+Betula: https://de.wikipedia.org/wiki/Birken
+Carpinus: https://de.wikipedia.org/wiki/Hainbuchen
+Castanea: https://de.wikipedia.org/wiki/Kastanien
+Catalpa: https://de.wikipedia.org/wiki/Trompetenbäume
+Celtis: https://de.wikipedia.org/wiki/Zürgelbäume
+Cornus: https://de.wikipedia.org/wiki/Hartriegel
+Corylus: https://de.wikipedia.org/wiki/Haseln
+Crataegus: https://de.wikipedia.org/wiki/Weißdorne
+Cydonia: not found, site keys: commonswiki, kywiki, specieswiki
+Elaeagnus: https://de.wikipedia.org/wiki/Ölweiden
+Eriolobus: not found, site keys: enwiki, eswiki, frwiki, lawiki, ptwiki, specieswiki, viwiki
+Fagus: https://de.wikipedia.org/wiki/Buchen
+Fraxinus: https://de.wikipedia.org/wiki/Eschen (Pflanzengattung)
+Ginkgo: not found, site keys: arwiki, arzwiki, azwiki, bgwiki, bswiki, cawiki, cywiki, dawiki, dsbwiki, enwiki, eowiki, eswiki, etwiki, fawiki, fiwiki, frwiki, gawiki, hrwiki, hsbwiki, idwiki, iswiki, kawiki, kkwiki, knwiki, kowiki, lawiki, lvwiki, mywiki, nlwiki, nnwiki, plwiki, ruwiki, simplewiki, specieswiki, ukwiki, zhwiki
+Gleditsia: https://de.wikipedia.org/wiki/Gleditschien
+Hippophae: https://de.wikipedia.org/wiki/Sanddorne
+Ilex: https://de.wikipedia.org/wiki/Stechpalmen
+Juglans: https://de.wikipedia.org/wiki/Walnüsse
+Juniperus: https://de.wikipedia.org/wiki/Wacholder
+Koelreuteria: https://de.wikipedia.org/wiki/Koelreuteria
+Larix: https://de.wikipedia.org/wiki/Lärchen
+Liquidambar: https://de.wikipedia.org/wiki/Amberbäume
+Liriodendron: https://de.wikipedia.org/wiki/Tulpenbäume
+Magnolia: https://de.wikipedia.org/wiki/Magnolien
+Malus: https://de.wikipedia.org/wiki/Äpfel
+Mespilus: not found, site keys: arzwiki, azwiki, azwikibooks, bewiki, bgwiki, cawiki, cswiki, dawiki, dsbwiki, enwiki, eswiki, fawiki, frwiki, hsbwiki, huwiki, hywiki, iowiki, kawiki, kbdwiki, kowiki, kywiki, ltwiki, mkwiki, nlwiki, nowiki, oswiki, plwiki, ptwiki, quwiki, ruwiki, simplewiki, skwiki, specieswiki, srwiki, svwiki, uzwiki, viwiki, xmfwiki
+Metasequoia: not found, site keys: dawiki, elwiki, enwiki, etwiki, fiwiki, gawiki, huwiki, idwiki, iswiki, kowiki, nlwiki, plwiki, specieswiki, ukwiki
+Morus: not found, site keys: angwiki, arwiki, arzwiki, avkwiki, brwiki, cawiki, cebwiki, enwiki, eowiki, eswiki, euwiki, fawiki, fiwiki, frrwiki, frwiki, gawiki, gdwiki, hewiki, huwiki, hywiki, iowiki, itwiki, jawiki, lfnwiki, mlwiki, mywiki, nlwiki, plwiki, pnbwiki, ruwiki, simplewiki, specieswiki, svwiki, tawiki, trwiki, ukwiki, zhwiki
+Morus: https://de.wikipedia.org/wiki/Maulbeeren
+Ostrya: https://de.wikipedia.org/wiki/Hopfenbuchen
+Picea: https://de.wikipedia.org/wiki/Fichten
+Pinus: https://de.wikipedia.org/wiki/Kiefern
+Platanus: https://de.wikipedia.org/wiki/Platanen
+Populus: https://de.wikipedia.org/wiki/Pappeln
+Prunus: https://de.wikipedia.org/wiki/Prunus
+Pseudotsuga: https://de.wikipedia.org/wiki/Douglasien
+Pyracantha: https://de.wikipedia.org/wiki/Feuerdorn
+Pyrus: https://de.wikipedia.org/wiki/Birnen
+Quercus: https://de.wikipedia.org/wiki/Eichen
+Rhus: https://de.wikipedia.org/wiki/Rhus
+Robinia: https://de.wikipedia.org/wiki/Robinien
+Robinia: not found, site keys: specieswiki
+Robinia: not found, site keys:
+Salix: not found, site keys:
+Salix: https://de.wikipedia.org/wiki/Weiden (Gattung)
+Sambucus: https://de.wikipedia.org/wiki/Holunder
+Sophora: not found, site keys: afwiki, arwiki, arzwiki, azbwiki, azwiki, bewiki, cawiki, cebwiki, commonswiki, cswiki, dawiki, enwiki, eowiki, eswiki, etwiki, fawiki, fiwiki, frwiki, huwiki, hywiki, idwiki, itwiki, kawiki, kkwiki, koiwiki, kvwiki, kywiki, lawiki, ltwiki, mrjwiki, nlwiki, plwiki, ptwiki, rowiki, ruwiki, simplewiki, specieswiki, sqwiki, svwiki, trwiki, udmwiki, ukwiki, uzwiki, vecwiki, viwiki, vlswiki, warwiki, yiwiki, zhwiki
+Sorbus: https://de.wikipedia.org/wiki/Mehlbeeren
+Syringa: https://de.wikipedia.org/wiki/Flieder
+Syringa: not found, site keys:
+Tamarix: https://de.wikipedia.org/wiki/Tamarisken
+Taxus: https://de.wikipedia.org/wiki/Eiben
+Tetradium: https://de.wikipedia.org/wiki/Stinkeschen
+Thuja: https://de.wikipedia.org/wiki/Lebensbäume (Gattung)
+Tilia: https://de.wikipedia.org/wiki/Linden (Gattung)
+Ulmus: https://de.wikipedia.org/wiki/Ulmen
+Ulmus: not found, site keys: cebwiki, specieswiki
+Zelkova: https://de.wikipedia.org/wiki/Zelkoven
