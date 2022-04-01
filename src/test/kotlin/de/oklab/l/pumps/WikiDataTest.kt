@@ -99,20 +99,24 @@ class WikiDataTest {
             try {
                 //repo.connection.prepareTupleQuery(queryScientificName).evaluate(SPARQLResultsJSONWriter(System.out))
                 val result = repo.connection.prepareTupleQuery(queryScientificName).evaluate()
-                while (result.hasNext()) {
-                    val entry = result.next()
-                    val wikiDataLabel = entry.getBinding("itemLabel").value.stringValue()
-                    val wbdf = WikibaseDataFetcher.getWikidataDataFetcher()
-                    val genus = wbdf.getEntityDocument(wikiDataLabel)
-                    if (genus is ItemDocument) {
-                        val key = "dewiki"
-                        val wikipediaPageTitle = genus.siteLinks[key]?.pageTitle
-                        if (wikipediaPageTitle != null) {
-                            foundEntries.add("$name: https://de.wikipedia.org/wiki/${wikipediaPageTitle}")
-                        } else {
-                            foundEntries.add("$name: not found, site keys: ${genus.siteLinks.keys.joinToString(", ")}")
+                if (result.hasNext()) {
+                    while (result.hasNext()) {
+                        val entry = result.next()
+                        val wikiDataLabel = entry.getBinding("itemLabel").value.stringValue()
+                        val wbdf = WikibaseDataFetcher.getWikidataDataFetcher()
+                        val genus = wbdf.getEntityDocument(wikiDataLabel)
+                        if (genus is ItemDocument) {
+                            val key = "dewiki"
+                            val wikipediaPageTitle = genus.siteLinks[key]?.pageTitle
+                            if (wikipediaPageTitle != null) {
+                                foundEntries.add("$name: https://de.wikipedia.org/wiki/${wikipediaPageTitle}")
+                            } else {
+                                foundEntries.add("$name: not found, site keys: ${genus.siteLinks.keys.joinToString(", ")}")
+                            }
                         }
                     }
+                } else {
+                    foundEntries.add("$name: not found in wikidata")
                 }
             } catch (exception: Exception) {
                 exception.printStackTrace()
