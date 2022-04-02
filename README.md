@@ -37,8 +37,10 @@
    * [Leaflet](https://leafletjs.com)
 
 ## Charts
- * [Tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/4/)
- * [Tree count in Leipzig splitted by districts](https://datawrapper.dwcdn.net/ifuls/2/)
- * [Tree count changes April 2021 to March 2022 in Leipzig splitted by districts](https://datawrapper.dwcdn.net/uuNlj/1/)
- * [Tree count in Leipzig splitted by species](https://datawrapper.dwcdn.net/fXwZM/1/)
- * [Tree count changes April 2021 to March 2022 in Leipzig splitted by species](https://datawrapper.dwcdn.net/yUBUD/1/)
+ * [Street tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/4/)
+ * [Street tree count in Leipzig splitted by districts](https://datawrapper.dwcdn.net/ifuls/2/)
+ * [Street tree count changes April 2021 to March 2022 in Leipzig splitted by districts](https://datawrapper.dwcdn.net/uuNlj/1/)
+ * [Street tree count in Leipzig splitted by species](https://datawrapper.dwcdn.net/fXwZM/1/)
+ * [Street tree count changes April 2021 to March 2022 in Leipzig splitted by species](https://datawrapper.dwcdn.net/yUBUD/1/)
+ * [Lost street trees between April 2021 and April 2022](https://sannsie.carto.com/builder/ea1519a7-a58d-46a1-bd3a-286218c357d8/embed)
+ * [Replaced street trees between April 2021 and April 2022](https://sannsie.carto.com/builder/2ad5f54c-30b1-455b-84c7-9a51302523ea/embed)

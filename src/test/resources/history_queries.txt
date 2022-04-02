@@ -81,6 +81,7 @@ where to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') like '2022-04-01'
 where to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2022-03-26'
 and t1.pflanzjahr < t2.pflanzjahr and t2.pflanzjahr >= 2021
 
+
 # Most probably only corrected plant year
 
 select *
@@ -92,6 +93,7 @@ where to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') like '2022-04-01'
 where to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2021-04-05'
 and t1.pflanzjahr != t2.pflanzjahr and (t2.pflanzjahr < t1.pflanzjahr or t2.pflanzjahr < 2021)
 
+
 # Corrected species
 
 select *
@@ -102,3 +104,14 @@ where to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') like '2022-04-01'
 ) AS t2 ON t2.standortnr = t1.standortnr
 where to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2021-04-05'
 and t1.pflanzjahr = t2.pflanzjahr and (t1.baumart_wi != t2.baumart_wi)
+
+
+# StandortNr not contained anymore
+
+select *
+from tree_history t2
+where to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') like '2022-03-26'
+and t2.standortnr not in (
+ select t1.standortnr from tree_history t1
+ where to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2022-04-01'
+)
