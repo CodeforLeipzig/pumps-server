@@ -1,0 +1,1534 @@
+{
+    "species": [{
+            "name": "Abies alba",
+            "labelGer": "Weiß-Tanne",
+            "wikidata": "https://www.wikidata.org/wiki/Q146992",
+            "wikipedia": "https://de.wikipedia.org/wiki/Wei%C3%9F%2DTanne",
+            "image": "https://commons.wikimedia.org/wiki/File:Abies%20alba%20Pyrenees%2DOrientales%2Ejpg"
+        }, {
+            "name": "Abies species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer buergerianum",
+            "labelGer": "Dreispitz-Ahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q941891",
+            "wikipedia": "https://de.wikipedia.org/wiki/Dreispitz%2DAhorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Morris%20Arboretum%20Acer%20buergerianum%2EJPG"
+        }, {
+            "name": "Acer campestre",
+            "labelGer": "Feldahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q158785",
+            "wikipedia": "https://de.wikipedia.org/wiki/Feldahorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Acer%20campestre%2002%20by%2Ddpc%2Ejpg"
+        }, {
+            "name": "Acer campestre 'Elsrijk'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer campestre 'Huibers Elegant'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer monspessulanum",
+            "labelGer": "Französischer Ahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q161388",
+            "wikipedia": "https://de.wikipedia.org/wiki/Franz%C3%B6sischer%20Ahorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Acer%20monspessulanum%20fg02%2Ejpg"
+        }, {
+            "name": "Acer negundo",
+            "labelGer": "Eschen-Ahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q161166",
+            "wikipedia": "https://de.wikipedia.org/wiki/Eschen%2DAhorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Acer%20negundo%2060052613%2Ejpg"
+        }, {
+            "name": "Acer platanoides",
+            "labelGer": "Spitzahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q26745",
+            "wikipedia": "https://de.wikipedia.org/wiki/Spitzahorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Ahornbluete%2Ejpg"
+        }, {
+            "name": "Acer platanoides 'Allershausen'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Apollo'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Cleveland'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Columnare'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Deborah'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Emerald Queen'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Faassen's Black'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Faassen´s Black'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Fairview'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Farlake's Green'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Farlake´s Green'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Globosum'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Olmstedt'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Royal Red'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer platanoides 'Schwedleri'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer pseudoplatanus",
+            "labelGer": "Bergahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q156944",
+            "wikipedia": "https://de.wikipedia.org/wiki/Berg%2DAhorn",
+            "image": "https://commons.wikimedia.org/wiki/File:ID%201211%20Bergahorn%200011%2Ejpg"
+        }, {
+            "name": "Acer pseudoplatanus 'Atropurpureum'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer rubrum",
+            "labelGer": "Rot-Ahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q161364",
+            "wikipedia": "https://de.wikipedia.org/wiki/Rot%2DAhorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Red%20maple%2Epng"
+        }, {
+            "name": "Acer saccharinum",
+            "labelGer": "Silber-Ahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q158301",
+            "wikipedia": "https://de.wikipedia.org/wiki/Silber%2DAhorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Acer%20saccharinum%20Grimes%20Farm%201%2Ejpg"
+        }, {
+            "name": "Acer species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Acer tataricum",
+            "labelGer": "Tatarischer Steppen-Ahorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q162728",
+            "wikipedia": "https://de.wikipedia.org/wiki/Tatarischer%20Steppen%2DAhorn",
+            "image": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D0%BA%D0%B8%D1%88%2EJPG"
+        }, {
+            "name": "Acer x freemanii 'Autumn Blaze'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Aesculus hippocastanum",
+            "labelGer": "Gewöhnliche Rosskastanie",
+            "wikidata": "https://www.wikidata.org/wiki/Q26899",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Rosskastanie",
+            "image": "https://commons.wikimedia.org/wiki/File:Horse%2Dchestnut%2D1%2D%2Ejpg"
+        }, {
+            "name": "Aesculus hippocastanum 'Baumannii'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Aesculus x carnea",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Aesculus x carnea 'Briotii'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ailanthus altissima",
+            "labelGer": "Götterbaum",
+            "wikidata": "https://www.wikidata.org/wiki/Q159570",
+            "wikipedia": "https://de.wikipedia.org/wiki/G%C3%B6tterbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:G%C3%B6tterbaum%20%28Ailanthus%20altissima%29%2Ejpg"
+        }, {
+            "name": "Alnus cordata",
+            "labelGer": "Herzblättrige Erle",
+            "wikidata": "https://www.wikidata.org/wiki/Q1543689",
+            "wikipedia": "https://de.wikipedia.org/wiki/Herzbl%C3%A4ttrige%20Erle",
+            "image": "https://commons.wikimedia.org/wiki/File:ItalAlder%2Ejpg"
+        }, {
+            "name": "Alnus glutinosa",
+            "labelGer": "Schwarz-Erle",
+            "wikidata": "https://www.wikidata.org/wiki/Q156904",
+            "wikipedia": "https://de.wikipedia.org/wiki/Schwarz%2DErle",
+            "image": "https://commons.wikimedia.org/wiki/File:Alnus%20glutinosa%20011%2Ejpg"
+        }, {
+            "name": "Alnus incana",
+            "labelGer": "Grau-Erle",
+            "wikidata": "https://www.wikidata.org/wiki/Q157641",
+            "wikipedia": "https://de.wikipedia.org/wiki/Grau%2DErle",
+            "image": "https://commons.wikimedia.org/wiki/File:Alnus%20incana%20flowers%20buds%2Ejpg"
+        }, {
+            "name": "Alnus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Alnus x spaethii",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Amelanchier arborea 'Robin Hill'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Amelanchier lamarckii",
+            "labelGer": "Kupfer-Felsenbirne",
+            "wikidata": "https://www.wikidata.org/wiki/Q161702",
+            "wikipedia": "https://de.wikipedia.org/wiki/Kupfer%2DFelsenbirne",
+            "image": "https://commons.wikimedia.org/wiki/File:Busch%20Jakobsberg%2Ejpg"
+        }, {
+            "name": "Betula nigra",
+            "labelGer": "Schwarz-Birke",
+            "wikidata": "https://www.wikidata.org/wiki/Q1510231",
+            "wikipedia": "https://de.wikipedia.org/wiki/Schwarz%2DBirke",
+            "image": "https://commons.wikimedia.org/wiki/File:Bergpark%20Wilhelmsh%C3%B6he%20%2D%20Baum%20420%202019%2D12%2D19%20d%2EJPG"
+        }, {
+            "name": "Betula pendula",
+            "labelGer": "Hänge-Birke",
+            "wikidata": "https://www.wikidata.org/wiki/Q156895",
+            "wikipedia": "https://de.wikipedia.org/wiki/H%C3%A4nge%2DBirke",
+            "image": "https://commons.wikimedia.org/wiki/File:Betula%20pendula%20Finland%2Ejpg"
+        }, {
+            "name": "Betula pendula 'Dalecarlica'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Betula pendula 'Youngii'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Betula species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Carpinus betulus",
+            "labelGer": "Hainbuche",
+            "wikidata": "https://www.wikidata.org/wiki/Q158776",
+            "wikipedia": "https://de.wikipedia.org/wiki/Hainbuche",
+            "image": "https://commons.wikimedia.org/wiki/File:Carpinus%20betulus%20%2D%20Hunsr%C3%BCck%20001%2Ejpg"
+        }, {
+            "name": "Carpinus betulus 'Fastigiata'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Carpinus betulus 'Frans Fontaine'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Carpinus betulus 'Lucas'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Castanea sativa",
+            "labelGer": "Edelkastanie",
+            "wikidata": "https://www.wikidata.org/wiki/Q22699",
+            "wikipedia": "https://de.wikipedia.org/wiki/Edelkastanie",
+            "image": "https://commons.wikimedia.org/wiki/File:Lajen%20Edelkastanie%20Unterbuchfelder%20Lajen%20Ried%20Strasse%2Ejpg"
+        }, {
+            "name": "Catalpa bignonioides",
+            "labelGer": "Gewöhnlicher Trompetenbaum",
+            "wikidata": "https://www.wikidata.org/wiki/Q163831",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gew%C3%B6hnlicher%20Trompetenbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:Catalpa%20bignonioides%20inflorescence%2Ejpg"
+        }, {
+            "name": "Celtis australis",
+            "labelGer": "Europäischer Zürgelbaum",
+            "wikidata": "https://www.wikidata.org/wiki/Q255375",
+            "wikipedia": "https://de.wikipedia.org/wiki/Europ%C3%A4ischer%20Z%C3%BCrgelbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:Celtis%20australis%2020150404%20a%2Ejpg"
+        }, {
+            "name": "Cornus mas",
+            "labelGer": "Kornelkirsche",
+            "wikidata": "https://www.wikidata.org/wiki/Q158642",
+            "wikipedia": "https://de.wikipedia.org/wiki/Kornelkirsche",
+            "image": "https://commons.wikimedia.org/wiki/File:CornusMas%20Fruits%2001%2Ejpg"
+        }, {
+            "name": "Corylus colurna",
+            "labelGer": "Baum-Hasel",
+            "wikidata": "https://www.wikidata.org/wiki/Q148939",
+            "wikipedia": "https://de.wikipedia.org/wiki/Baum%2DHasel",
+            "image": "https://commons.wikimedia.org/wiki/File:TurkHazel%2Ejpg"
+        }, {
+            "name": "Crataegus laevigata",
+            "labelGer": "Zweigriffeliger Weißdorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q159553",
+            "wikipedia": "https://de.wikipedia.org/wiki/Zweigriffeliger%20Wei%C3%9Fdorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Crataegus%2Doxyacantha%2Dflowers%2EJPG"
+        }, {
+            "name": "Crataegus laevigata 'Paul's Scarlet'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Crataegus monogyna",
+            "labelGer": "Eingriffeliger Weißdorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q161511",
+            "wikipedia": "https://de.wikipedia.org/wiki/Eingriffeliger%20Wei%C3%9Fdorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Common%20hawthorn%2Ejpg"
+        }, {
+            "name": "Crataegus monogyna 'Stricta'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Crataegus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Crataegus x lavallei",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Crataegus x lavallei 'Carrierei'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Cydonia oblonga",
+            "labelGer": "Quitte",
+            "wikidata": "https://www.wikidata.org/wiki/Q43300",
+            "wikipedia": "https://de.wikipedia.org/wiki/Quitte",
+            "image": "https://commons.wikimedia.org/wiki/File:Quince%20flowers%2Ejpg"
+        }, {
+            "name": "Cydonia oblonga 'Bereczki'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Cydonia oblonga 'Konstantinopeler Apfelquitte'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Elaeagnus angustifolia",
+            "labelGer": "Schmalblättrige Ölweide",
+            "wikidata": "https://www.wikidata.org/wiki/Q157969",
+            "wikipedia": "https://de.wikipedia.org/wiki/Schmalbl%C3%A4ttrige%20%C3%96lweide",
+            "image": "https://commons.wikimedia.org/wiki/File:Russian%20Olive%2Ejpg"
+        }, {
+            "name": "Eriolobus trilobatus",
+            "labelGer": "Eriolobus trilobatus",
+            "wikidata": "https://www.wikidata.org/wiki/Q15539916",
+            "wikipedia": null,
+            "image": "https://commons.wikimedia.org/wiki/File:Eriolobus%20trilobatus%2Ejpg"
+        }, {
+            "name": "Fagus sylvatica",
+            "labelGer": "Rotbuche",
+            "wikidata": "https://www.wikidata.org/wiki/Q146149",
+            "wikipedia": "https://de.wikipedia.org/wiki/Rotbuche",
+            "image": "https://commons.wikimedia.org/wiki/File:Grib%20skov%2Ejpg"
+        }, {
+            "name": "Fagus sylvatica 'Atropunicea'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus americana",
+            "labelGer": "Weiß-Esche",
+            "wikidata": "https://www.wikidata.org/wiki/Q1193369",
+            "wikipedia": "https://de.wikipedia.org/wiki/Wei%C3%9F%2DEsche",
+            "image": "https://commons.wikimedia.org/wiki/File:Glacier%20Pools%20Preserve%20%2821%29%20%2819052549854%29%2Ejpg"
+        }, {
+            "name": "Fraxinus americana 'Autumn Purple'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus americana 'Skyline'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus angustifolia 'Raywood'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus excelsior",
+            "labelGer": "Gemeine Esche",
+            "wikidata": "https://www.wikidata.org/wiki/Q156907",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gemeine%20Esche",
+            "image": "https://commons.wikimedia.org/wiki/File:Fraxinus%20excelsior%20001%2Ejpg"
+        }, {
+            "name": "Fraxinus excelsior 'Altena'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus excelsior 'Atlas'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus excelsior 'Aurea'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus excelsior 'Diversifolia'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus excelsior 'Westhof's Glorie'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus excelsior 'Westhof´s Glorie'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus ornus",
+            "labelGer": "Manna-Esche",
+            "wikidata": "https://www.wikidata.org/wiki/Q161421",
+            "wikipedia": "https://de.wikipedia.org/wiki/Manna%2DEsche",
+            "image": "https://commons.wikimedia.org/wiki/File:Fraxinus%20ornus%20JPG2%2Ejpg"
+        }, {
+            "name": "Fraxinus ornus 'Arie Peters'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus ornus 'Rotterdam'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus pennsylvanica",
+            "labelGer": "Rot-Esche",
+            "wikidata": "https://www.wikidata.org/wiki/Q161164",
+            "wikipedia": "https://de.wikipedia.org/wiki/Rot%2DEsche",
+            "image": "https://commons.wikimedia.org/wiki/File:Fraxinus%20pensylvanica%20a1%2Ejpg"
+        }, {
+            "name": "Fraxinus pennsylvanica 'Summit'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Fraxinus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ginkgo biloba",
+            "labelGer": "Ginkgo",
+            "wikidata": "https://www.wikidata.org/wiki/Q43284",
+            "wikipedia": "https://de.wikipedia.org/wiki/Ginkgo",
+            "image": "https://commons.wikimedia.org/wiki/File:GINKGOBAUM%2D2%2Ejpg"
+        }, {
+            "name": "Ginkgo biloba 'Lakeview'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ginkgo biloba 'Princeton Sentry'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Gleditsia triacanthos",
+            "labelGer": "Amerikanische Gleditschie",
+            "wikidata": "https://www.wikidata.org/wiki/Q157650",
+            "wikipedia": "https://de.wikipedia.org/wiki/Amerikanische%20Gleditschie",
+            "image": "https://commons.wikimedia.org/wiki/File:Gleditsia%20triacanthos%20Maryhill%20Museum%2001%2Ejpg"
+        }, {
+            "name": "Gleditsia triacanthos 'Inermis'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Gleditsia triacanthos 'Shademaster'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Gleditsia triacanthos 'Skyline'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Gleditsia triacanthos 'Sunburst'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Hippophae rhamnoides",
+            "labelGer": "Hippophae rhamnoides",
+            "wikidata": "https://www.wikidata.org/wiki/Q165378",
+            "wikipedia": "https://de.wikipedia.org/wiki/Sanddorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Hippophae%20rhamnoides%2D01%20%28xndr%29%2EJPG"
+        }, {
+            "name": "Ilex aquifolium",
+            "labelGer": "Europäische Stechpalme",
+            "wikidata": "https://www.wikidata.org/wiki/Q192190",
+            "wikipedia": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20Stechpalme",
+            "image": "https://commons.wikimedia.org/wiki/File:Illustration%20Ilex%20aquifolium0%2Ejpg"
+        }, {
+            "name": "Juglans regia",
+            "labelGer": "Echte Walnuss",
+            "wikidata": "https://www.wikidata.org/wiki/Q46871",
+            "wikipedia": "https://de.wikipedia.org/wiki/Echte%20Walnuss",
+            "image": "https://commons.wikimedia.org/wiki/File:Walnut%20forest%20in%20Arslanbab%2Ejpg"
+        }, {
+            "name": "Juglans regia 'Wunder von Monrepos'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Juniperus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Koelreuteria paniculata",
+            "labelGer": "Blasenesche",
+            "wikidata": "https://www.wikidata.org/wiki/Q844835",
+            "wikipedia": "https://de.wikipedia.org/wiki/Blasenesche",
+            "image": "https://commons.wikimedia.org/wiki/File:KoelreuteriaPaniculata5%2Ejpg"
+        }, {
+            "name": "Larix decidua",
+            "labelGer": "Europäische Lärche",
+            "wikidata": "https://www.wikidata.org/wiki/Q146048",
+            "wikipedia": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20L%C3%A4rche",
+            "image": "https://commons.wikimedia.org/wiki/File:Larix%20decidua%20Aletschwald%2Ejpg"
+        }, {
+            "name": "Larix species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Liquidambar styraciflua",
+            "labelGer": "Amerikanischer Amberbaum",
+            "wikidata": "https://www.wikidata.org/wiki/Q469652",
+            "wikipedia": "https://de.wikipedia.org/wiki/Amerikanischer%20Amberbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:Liquidambar%20styraciflua%20%2D%20La%20Hulpe%20%281%29%2EJPG"
+        }, {
+            "name": "Liquidambar styraciflua 'Moraine'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Liquidambar styraciflua 'Paarl'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Liquidambar styraciflua 'Worplesdon'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Liriodendron tulipifera",
+            "labelGer": "Tulpenbaum",
+            "wikidata": "https://www.wikidata.org/wiki/Q158783",
+            "wikipedia": "https://de.wikipedia.org/wiki/Tulpenbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:Liriodendron%20tulipifera%20%28arbre%29%20%2D%20Laeken%2EJPG"
+        }, {
+            "name": "Liriodendron tulipifera 'Fastigiatum'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Magnolia species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica",
+            "labelGer": "Malus domestica",
+            "wikidata": "https://www.wikidata.org/wiki/Q18674606",
+            "wikipedia": "https://de.wikipedia.org/wiki/Kulturapfel",
+            "image": "https://commons.wikimedia.org/wiki/File:Tree%20with%20red%20apples%20in%20Barkedal%204%2Ejpg"
+        }, {
+            "name": "Malus domestica 'Carola'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Cox Orange'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Goldparmäne'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Gravensteiner'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Großer Brünnerling'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Idared'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Kaiser Wilhelm'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Klarapfel'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Ontario'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Rheinischer Bohnapfel'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Roter Berlepsch Mutation'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Roter Boskoop'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus domestica 'Roter Eiserapfel'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus prunifolia",
+            "labelGer": "Malus prunifolia",
+            "wikidata": "https://www.wikidata.org/wiki/Q738571",
+            "wikipedia": "https://en.wikipedia.org/wiki/Malus%20prunifolia",
+            "image": "https://commons.wikimedia.org/wiki/File:Malus%20prunifolia%2EJPG"
+        }, {
+            "name": "Malus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Malus tschonoskii",
+            "labelGer": "Wollapfel",
+            "wikidata": "https://www.wikidata.org/wiki/Q1470571",
+            "wikipedia": "https://de.wikipedia.org/wiki/Wollapfel",
+            "image": "https://commons.wikimedia.org/wiki/File:Malus%2Dtschonoskii%2EJPG"
+        }, {
+            "name": "Mespilus germanica",
+            "labelGer": "Mispel",
+            "wikidata": "https://www.wikidata.org/wiki/Q146186",
+            "wikipedia": "https://de.wikipedia.org/wiki/Mispel",
+            "image": "https://commons.wikimedia.org/wiki/File:Medlar%20pomes%20and%20leaves%2Ejpg"
+        }, {
+            "name": "Metasequoia glyptostroboides",
+            "labelGer": "Urweltmammutbaum",
+            "wikidata": "https://www.wikidata.org/wiki/Q156800",
+            "wikipedia": "https://de.wikipedia.org/wiki/Urweltmammutbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:Metasequoia%20Glyptostroboides2%2Ejpg"
+        }, {
+            "name": "Morus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "nicht bestimmt",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ostrya carpinifolia",
+            "labelGer": "Europäische Hopfenbuche",
+            "wikidata": "https://www.wikidata.org/wiki/Q1367533",
+            "wikipedia": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20Hopfenbuche",
+            "image": "https://commons.wikimedia.org/wiki/File:Ostrya%20carpinifolia%202%2Ejpg"
+        }, {
+            "name": "Picea abies",
+            "labelGer": "Gemeine Fichte",
+            "wikidata": "https://www.wikidata.org/wiki/Q145992",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gemeine%20Fichte",
+            "image": "https://commons.wikimedia.org/wiki/File:Kuusk%20Keila%2DPaldiski%20rdt%20%C3%A4%C3%A4res%2Ejpg"
+        }, {
+            "name": "Picea pungens 'Glauca'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Picea species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pinus nigra",
+            "labelGer": "Schwarzkiefer",
+            "wikidata": "https://www.wikidata.org/wiki/Q145954",
+            "wikipedia": "https://de.wikipedia.org/wiki/Schwarzkiefer",
+            "image": "https://commons.wikimedia.org/wiki/File:Vidikovac%20Sokolarica%20024%2Ejpg"
+        }, {
+            "name": "Pinus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pinus sylvestris",
+            "labelGer": "Waldkiefer",
+            "wikidata": "https://www.wikidata.org/wiki/Q133128",
+            "wikipedia": "https://de.wikipedia.org/wiki/Waldkiefer",
+            "image": "https://commons.wikimedia.org/wiki/File:Pinus%20sylvestris%20Glenmuick%2Ejpg"
+        }, {
+            "name": "Platanus x acerifolia",
+            "labelGer": null,
+            "wikidata": "https://www.wikidata.org/wiki/Q110601615",
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Platanus x acerifolia 'Pyramidalis'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Platanus x acerifolia 'Tremonia'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Populus alba",
+            "labelGer": "Populus alba",
+            "wikidata": "https://www.wikidata.org/wiki/Q146269",
+            "wikipedia": "https://de.wikipedia.org/wiki/Silber%2DPappel",
+            "image": "https://commons.wikimedia.org/wiki/File:Populus%20alba%2C%20Czajecice%2C%2020060812%201358%2Ejpg"
+        }, {
+            "name": "Populus nigra",
+            "labelGer": "Schwarz-Pappel",
+            "wikidata": "https://www.wikidata.org/wiki/Q147064",
+            "wikipedia": "https://de.wikipedia.org/wiki/Schwarz%2DPappel",
+            "image": "https://commons.wikimedia.org/wiki/File:Populus%20nigra%20kz1%2Ejpg"
+        }, {
+            "name": "Populus nigra 'Italica'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Populus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Populus tremula",
+            "labelGer": "Espe",
+            "wikidata": "https://www.wikidata.org/wiki/Q146110",
+            "wikipedia": "https://de.wikipedia.org/wiki/Espe",
+            "image": "https://commons.wikimedia.org/wiki/File:PopulusTremula001%2EJPG"
+        }, {
+            "name": "Populus x canadensis",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus avium",
+            "labelGer": "Vogel-Kirsche",
+            "wikidata": "https://www.wikidata.org/wiki/Q165137",
+            "wikipedia": "https://de.wikipedia.org/wiki/Vogel%2DKirsche",
+            "image": "https://commons.wikimedia.org/wiki/File:Prunus%20avium%20fruit%2Ejpg"
+        }, {
+            "name": "Prunus avium 'Burlat'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus avium 'Große Schwarze Knorpel'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus avium 'Hedelfinger Riesenkirsche'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus avium 'Plena'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus avium 'Regina'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus avium 'Van'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus cerasifera",
+            "labelGer": "Kirschpflaume",
+            "wikidata": "https://www.wikidata.org/wiki/Q146951",
+            "wikipedia": "https://de.wikipedia.org/wiki/Kirschpflaume",
+            "image": "https://commons.wikimedia.org/wiki/File:20140317Prunus%20cerasifera%20Hockenheimer%20Rheinbogen5%2Ejpg"
+        }, {
+            "name": "Prunus cerasifera 'Nigra'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus domestica",
+            "labelGer": "Pflaume",
+            "wikidata": "https://www.wikidata.org/wiki/Q44120",
+            "wikipedia": "https://de.wikipedia.org/wiki/Pflaume",
+            "image": "https://commons.wikimedia.org/wiki/File:Fruits%20Prunus%20domestica%2Ejpg"
+        }, {
+            "name": "Prunus domestica 'Große Grüne Reneklode'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus domestica 'Hanita'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus domestica 'Hauszwetschge Wolff'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus domestica syriaca 'Nancymirabelle'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus maackii 'Amber Beauty'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus mahaleb",
+            "labelGer": "Steinweichsel",
+            "wikidata": "https://www.wikidata.org/wiki/Q161920",
+            "wikipedia": "https://de.wikipedia.org/wiki/Steinweichsel",
+            "image": "https://commons.wikimedia.org/wiki/File:Prunus%20mahaleb2%2Ejpg"
+        }, {
+            "name": "Prunus padus",
+            "labelGer": "Gewöhnliche Traubenkirsche",
+            "wikidata": "https://www.wikidata.org/wiki/Q165424",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Traubenkirsche",
+            "image": "https://commons.wikimedia.org/wiki/File:Vogelkers%20bloesem%2Ejpg"
+        }, {
+            "name": "Prunus padus 'Albertii'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus padus 'Schloss Tiefurt'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus 'Pandora'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus sargentii",
+            "labelGer": "Prunus sargentii",
+            "wikidata": "https://www.wikidata.org/wiki/Q163039",
+            "wikipedia": "https://en.wikipedia.org/wiki/Prunus%20sargentii",
+            "image": "https://commons.wikimedia.org/wiki/File:Prunus%20sargentii%2EJPG"
+        }, {
+            "name": "Prunus sargentii 'Rancho'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus serotina",
+            "labelGer": "Spätblühende Traubenkirsche",
+            "wikidata": "https://www.wikidata.org/wiki/Q158987",
+            "wikipedia": "https://de.wikipedia.org/wiki/Sp%C3%A4tbl%C3%BChende%20Traubenkirsche",
+            "image": "https://commons.wikimedia.org/wiki/File:Amerikaanse%20vogelkers%20Prunus%20serotina%20closeup%2Ejpg"
+        }, {
+            "name": "Prunus serrulata 'Amanogawa'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus serrulata 'Kanzan'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus serrulata 'Sunset Boulevard'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus subhirtella 'Autumnalis'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus x hillieri 'Spire'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Prunus x schmittii",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pseudotsuga menziesii",
+            "labelGer": "Gewöhnliche Douglasie",
+            "wikidata": "https://www.wikidata.org/wiki/Q156687",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Douglasie",
+            "image": "https://commons.wikimedia.org/wiki/File:Pseudotsuga%20menziesii%207456%2EJPG"
+        }, {
+            "name": "Pyracantha  species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pyrus calleryana 'Chanticleer'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pyrus communis",
+            "labelGer": "Kultur-Birne",
+            "wikidata": "https://www.wikidata.org/wiki/Q146281",
+            "wikipedia": "https://de.wikipedia.org/wiki/Kultur%2DBirne",
+            "image": "https://commons.wikimedia.org/wiki/File:Pears%2Ejpg"
+        }, {
+            "name": "Pyrus communis 'Beech Hill'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pyrus communis 'Boscs Flaschenbirne'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pyrus communis 'Mostbirne'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Pyrus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Quercus cerris",
+            "labelGer": "Zerreiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q157277",
+            "wikipedia": "https://de.wikipedia.org/wiki/Zerreiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Quercus%20cerris%20folliage%2Ejpg"
+        }, {
+            "name": "Quercus coccinea",
+            "labelGer": "Scharlach-Eiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q854714",
+            "wikipedia": "https://de.wikipedia.org/wiki/Scharlach%2DEiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Scarlet%20Oak%20%2830873601235%29%2Ejpg"
+        }, {
+            "name": "Quercus frainetto",
+            "labelGer": "Ungarische Eiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q857075",
+            "wikipedia": "https://de.wikipedia.org/wiki/Ungarische%20Eiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Quercus%20frainetto%20kew1%2Ejpg"
+        }, {
+            "name": "Quercus libani",
+            "labelGer": "Libanon-Eiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q1488985",
+            "wikipedia": "https://de.wikipedia.org/wiki/Libanon%2DEiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Quercus%20libani%20port%2Ejpg"
+        }, {
+            "name": "Quercus palustris",
+            "labelGer": "Sumpf-Eiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q161253",
+            "wikipedia": "https://de.wikipedia.org/wiki/Sumpf%2DEiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Pin%20oak%20quercus%20palustris%2Ejpg"
+        }, {
+            "name": "Quercus petraea",
+            "labelGer": "Traubeneiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q158608",
+            "wikipedia": "https://de.wikipedia.org/wiki/Traubeneiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Quercus%20petraea%2002%2Ejpg"
+        }, {
+            "name": "Quercus robur",
+            "labelGer": "Stieleiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q165145",
+            "wikipedia": "https://de.wikipedia.org/wiki/Stieleiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Paprastasis%20azuolas%2EJPG"
+        }, {
+            "name": "Quercus robur 'Fastigiata'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Quercus robur 'Fastigiata Koster'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Quercus rubra",
+            "labelGer": "Roteiche",
+            "wikidata": "https://www.wikidata.org/wiki/Q147525",
+            "wikipedia": "https://de.wikipedia.org/wiki/Roteiche",
+            "image": "https://commons.wikimedia.org/wiki/File:Twin%20Sisters%20Trail%20%2814%29%20%2814092717698%29%2Ejpg"
+        }, {
+            "name": "Quercus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Rhus typhina",
+            "labelGer": "Essigbaum",
+            "wikidata": "https://www.wikidata.org/wiki/Q148986",
+            "wikipedia": "https://de.wikipedia.org/wiki/Essigbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:Rhty%20002%20lhp%2Ejpg"
+        }, {
+            "name": "Robinia pseudoacacia",
+            "labelGer": "Gewöhnliche Robinie",
+            "wikidata": "https://www.wikidata.org/wiki/Q157417",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gew%C3%B6hnliche%20Robinie",
+            "image": "https://commons.wikimedia.org/wiki/File:Villn%C3%B6%C3%9F%20Robinie%20beim%20Mantinghof%20Pardell%2Ejpg"
+        }, {
+            "name": "Robinia pseudoacacia 'Bessoniana'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Robinia pseudoacacia 'Monophylla'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Robinia pseudoacacia 'Sandraudiga'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Robinia pseudoacacia 'Umbraculifera'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Robinia x margaretta 'Casque Rouge'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Salix alba",
+            "labelGer": "Silber-Weide",
+            "wikidata": "https://www.wikidata.org/wiki/Q156918",
+            "wikipedia": "https://de.wikipedia.org/wiki/Silber%2DWeide",
+            "image": "https://commons.wikimedia.org/wiki/File:Salix%20alba%20leaves%2Ejpg"
+        }, {
+            "name": "Salix alba 'Tristis'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Salix caprea",
+            "labelGer": "Sal-Weide",
+            "wikidata": "https://www.wikidata.org/wiki/Q159565",
+            "wikipedia": "https://de.wikipedia.org/wiki/Sal%2DWeide",
+            "image": "https://commons.wikimedia.org/wiki/File:Salix%20caprea8%2Ejpg"
+        }, {
+            "name": "Salix fragilis",
+            "labelGer": "Bruch-Weide",
+            "wikidata": "https://www.wikidata.org/wiki/Q157518",
+            "wikipedia": "https://de.wikipedia.org/wiki/Bruch%2DWeide",
+            "image": "https://commons.wikimedia.org/wiki/File:Salix%20fragilis%20001%2Ejpg"
+        }, {
+            "name": "Salix matsudana 'Tortuosa'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Salix species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Sambucus nigra",
+            "labelGer": "Schwarzer Holunder",
+            "wikidata": "https://www.wikidata.org/wiki/Q22701",
+            "wikipedia": "https://de.wikipedia.org/wiki/Schwarzer%20Holunder",
+            "image": "https://commons.wikimedia.org/wiki/File:Sambucus%20nigra%20004%2Ejpg"
+        }, {
+            "name": "Sophora japonica",
+            "labelGer": "Sophora japonica",
+            "wikidata": "https://www.wikidata.org/wiki/Q10881597",
+            "wikipedia": null,
+            "image": "https://commons.wikimedia.org/wiki/File:Bussy%2DSaint%2DMartin%2D03%2EJPG"
+        }, {
+            "name": "Sophora japonica 'Regent'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Sorbus aria",
+            "labelGer": "Echte Mehlbeere",
+            "wikidata": "https://www.wikidata.org/wiki/Q157960",
+            "wikipedia": "https://de.wikipedia.org/wiki/Echte%20Mehlbeere",
+            "image": "https://commons.wikimedia.org/wiki/File:Sorbus%20aria%2D3420%2Ejpg"
+        }, {
+            "name": "Sorbus aria 'Magnifica'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Sorbus aucuparia",
+            "labelGer": "Vogelbeere",
+            "wikidata": "https://www.wikidata.org/wiki/Q146198",
+            "wikipedia": "https://de.wikipedia.org/wiki/Vogelbeere",
+            "image": "https://commons.wikimedia.org/wiki/File:Rowan%20tree%2020081002b%2Ejpg"
+        }, {
+            "name": "Sorbus aucuparia 'Edulis'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Sorbus intermedia",
+            "labelGer": "Schwedische Mehlbeere",
+            "wikidata": "https://www.wikidata.org/wiki/Q27980",
+            "wikipedia": "https://de.wikipedia.org/wiki/Schwedische%20Mehlbeere",
+            "image": "https://commons.wikimedia.org/wiki/File:Zweedse%20lijsterbes%2027%2D08%2D2005%2015%2E29%2E26%2EJPG"
+        }, {
+            "name": "Sorbus intermedia 'Brouwers'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Sorbus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Sorbus x thuringiaca 'Fastigiata'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Syringa vulgaris",
+            "labelGer": "Gemeiner Flieder",
+            "wikidata": "https://www.wikidata.org/wiki/Q6565319",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gemeiner%20Flieder",
+            "image": "https://commons.wikimedia.org/wiki/File:Syringa%20vulgaris%20Bulgaria%206%2Ejpg"
+        }, {
+            "name": "Tamarix species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Taxus baccata",
+            "labelGer": "Europäische Eibe",
+            "wikidata": "https://www.wikidata.org/wiki/Q179729",
+            "wikipedia": "https://de.wikipedia.org/wiki/Europ%C3%A4ische%20Eibe",
+            "image": "https://commons.wikimedia.org/wiki/File:Taxus%20baccata%20MHNT%2Ejpg"
+        }, {
+            "name": "Tetradium daniellii",
+            "labelGer": "Samthaarige Stinkesche",
+            "wikidata": "https://www.wikidata.org/wiki/Q837237",
+            "wikipedia": "https://de.wikipedia.org/wiki/Samthaarige%20Stinkesche",
+            "image": "https://commons.wikimedia.org/wiki/File:TetradiumDaniellii%2Ejpg"
+        }, {
+            "name": "Thuja species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia americana 'Nova'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia cordata",
+            "labelGer": "Winter-Linde",
+            "wikidata": "https://www.wikidata.org/wiki/Q158746",
+            "wikipedia": "https://de.wikipedia.org/wiki/Winterlinde",
+            "image": "https://commons.wikimedia.org/wiki/File:Tilia%20cordata%20%2D%20inflorescence%2Ejpg"
+        }, {
+            "name": "Tilia cordata 'Erecta'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia cordata 'Greenspire'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia cordata 'Rancho'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia cordata 'Roelvo'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia flavescens 'Glenleven'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia platyphyllos",
+            "labelGer": "Sommer-Linde",
+            "wikidata": "https://www.wikidata.org/wiki/Q156831",
+            "wikipedia": "https://de.wikipedia.org/wiki/Sommerlinde",
+            "image": "https://commons.wikimedia.org/wiki/File:L%C3%ADpa%20u%20Horn%C3%ADho%20Z%C3%A1blat%C3%AD%20v%20roce%202011%20%281%29%2EJPG"
+        }, {
+            "name": "Tilia species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia tomentosa",
+            "labelGer": "Silber-Linde",
+            "wikidata": "https://www.wikidata.org/wiki/Q161382",
+            "wikipedia": "https://de.wikipedia.org/wiki/Silber%2DLinde",
+            "image": "https://commons.wikimedia.org/wiki/File:Tilia%2Dtomentosa%2EJPG"
+        }, {
+            "name": "Tilia tomentosa 'Brabant'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia tomentosa 'Petiolaris'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia tomentosa 'Szeleste'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia x euchlora",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia x vulgaris",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Tilia x vulgaris 'Pallida'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus 'Columella'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus 'Dodoens'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus glabra",
+            "labelGer": "Bergulme",
+            "wikidata": "https://www.wikidata.org/wiki/Q147498",
+            "wikipedia": "https://de.wikipedia.org/wiki/Bergulme",
+            "image": "https://commons.wikimedia.org/wiki/File:RN%20Ulmus%20glabra%20%28alnarp%20sweden%29%2Ejpg"
+        }, {
+            "name": "Ulmus laevis",
+            "labelGer": "Flatterulme",
+            "wikidata": "https://www.wikidata.org/wiki/Q147492",
+            "wikipedia": "https://de.wikipedia.org/wiki/Flatterulme",
+            "image": "https://commons.wikimedia.org/wiki/File:Ulme%20Obertheres%2C%202%2Ejpg"
+        }, {
+            "name": "Ulmus 'Lobel'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus minor",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus 'Rebona'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus 'Regal'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus 'Sapporo Autumn Gold'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus species",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Ulmus x hollandica",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }, {
+            "name": "Zelkova serrata",
+            "labelGer": "Japanische Zelkove",
+            "wikidata": "https://www.wikidata.org/wiki/Q920344",
+            "wikipedia": "https://de.wikipedia.org/wiki/Japanische%20Zelkove",
+            "image": "https://commons.wikimedia.org/wiki/File:Zelkova%20serrata%20Noma%20keyaki01%2Ejpg"
+        }, {
+            "name": "Zelkova serrata 'Green Vase'",
+            "labelGer": null,
+            "wikidata": null,
+            "wikipedia": null,
+            "image": null
+        }
+    ]
+}

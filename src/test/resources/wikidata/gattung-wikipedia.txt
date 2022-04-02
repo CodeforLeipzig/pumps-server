@@ -1,64 +1,352 @@
-Abies: https://de.wikipedia.org/wiki/Tannen
-Acer: https://de.wikipedia.org/wiki/Ahorne
-Aesculus: https://de.wikipedia.org/wiki/Rosskastanien
-Ailanthus: https://de.wikipedia.org/wiki/Götterbäume
-Alnus: https://de.wikipedia.org/wiki/Erlen (Gattung)
-Amelanchier: https://de.wikipedia.org/wiki/Felsenbirnen
-Betula: https://de.wikipedia.org/wiki/Birken
-Carpinus: https://de.wikipedia.org/wiki/Hainbuchen
-Castanea: https://de.wikipedia.org/wiki/Kastanien
-Catalpa: https://de.wikipedia.org/wiki/Trompetenbäume
-Celtis: https://de.wikipedia.org/wiki/Zürgelbäume
-Cornus: https://de.wikipedia.org/wiki/Hartriegel
-Corylus: https://de.wikipedia.org/wiki/Haseln
-Crataegus: https://de.wikipedia.org/wiki/Weißdorne
-Cydonia: not found, site keys: commonswiki, kywiki, specieswiki
-Elaeagnus: https://de.wikipedia.org/wiki/Ölweiden
-Eriolobus: not found, site keys: enwiki, eswiki, frwiki, lawiki, ptwiki, specieswiki, viwiki
-Fagus: https://de.wikipedia.org/wiki/Buchen
-Fraxinus: https://de.wikipedia.org/wiki/Eschen (Pflanzengattung)
-Ginkgo: not found, site keys: arwiki, arzwiki, azwiki, bgwiki, bswiki, cawiki, cywiki, dawiki, dsbwiki, enwiki, eowiki, eswiki, etwiki, fawiki, fiwiki, frwiki, gawiki, hrwiki, hsbwiki, idwiki, iswiki, kawiki, kkwiki, knwiki, kowiki, lawiki, lvwiki, mywiki, nlwiki, nnwiki, plwiki, ruwiki, simplewiki, specieswiki, ukwiki, zhwiki
-Gleditsia: https://de.wikipedia.org/wiki/Gleditschien
-Hippophae: https://de.wikipedia.org/wiki/Sanddorne
-Ilex: https://de.wikipedia.org/wiki/Stechpalmen
-Juglans: https://de.wikipedia.org/wiki/Walnüsse
-Juniperus: https://de.wikipedia.org/wiki/Wacholder
-Koelreuteria: https://de.wikipedia.org/wiki/Koelreuteria
-Larix: https://de.wikipedia.org/wiki/Lärchen
-Liquidambar: https://de.wikipedia.org/wiki/Amberbäume
-Liriodendron: https://de.wikipedia.org/wiki/Tulpenbäume
-Magnolia: https://de.wikipedia.org/wiki/Magnolien
-Malus: https://de.wikipedia.org/wiki/Äpfel
-Mespilus: not found, site keys: arzwiki, azwiki, azwikibooks, bewiki, bgwiki, cawiki, cswiki, dawiki, dsbwiki, enwiki, eswiki, fawiki, frwiki, hsbwiki, huwiki, hywiki, iowiki, kawiki, kbdwiki, kowiki, kywiki, ltwiki, mkwiki, nlwiki, nowiki, oswiki, plwiki, ptwiki, quwiki, ruwiki, simplewiki, skwiki, specieswiki, srwiki, svwiki, uzwiki, viwiki, xmfwiki
-Metasequoia: not found, site keys: dawiki, elwiki, enwiki, etwiki, fiwiki, gawiki, huwiki, idwiki, iswiki, kowiki, nlwiki, plwiki, specieswiki, ukwiki
-Morus: not found, site keys: angwiki, arwiki, arzwiki, avkwiki, brwiki, cawiki, cebwiki, enwiki, eowiki, eswiki, euwiki, fawiki, fiwiki, frrwiki, frwiki, gawiki, gdwiki, hewiki, huwiki, hywiki, iowiki, itwiki, jawiki, lfnwiki, mlwiki, mywiki, nlwiki, plwiki, pnbwiki, ruwiki, simplewiki, specieswiki, svwiki, tawiki, trwiki, ukwiki, zhwiki
-Morus: https://de.wikipedia.org/wiki/Maulbeeren
-Ostrya: https://de.wikipedia.org/wiki/Hopfenbuchen
-Picea: https://de.wikipedia.org/wiki/Fichten
-Pinus: https://de.wikipedia.org/wiki/Kiefern
-Platanus: https://de.wikipedia.org/wiki/Platanen
-Populus: https://de.wikipedia.org/wiki/Pappeln
-Prunus: https://de.wikipedia.org/wiki/Prunus
-Pseudotsuga: https://de.wikipedia.org/wiki/Douglasien
-Pyracantha: https://de.wikipedia.org/wiki/Feuerdorn
-Pyrus: https://de.wikipedia.org/wiki/Birnen
-Quercus: https://de.wikipedia.org/wiki/Eichen
-Rhus: https://de.wikipedia.org/wiki/Rhus
-Robinia: https://de.wikipedia.org/wiki/Robinien
-Robinia: not found, site keys: specieswiki
-Robinia: not found, site keys:
-Salix: not found, site keys:
-Salix: https://de.wikipedia.org/wiki/Weiden (Gattung)
-Sambucus: https://de.wikipedia.org/wiki/Holunder
-Sophora: not found, site keys: afwiki, arwiki, arzwiki, azbwiki, azwiki, bewiki, cawiki, cebwiki, commonswiki, cswiki, dawiki, enwiki, eowiki, eswiki, etwiki, fawiki, fiwiki, frwiki, huwiki, hywiki, idwiki, itwiki, kawiki, kkwiki, koiwiki, kvwiki, kywiki, lawiki, ltwiki, mrjwiki, nlwiki, plwiki, ptwiki, rowiki, ruwiki, simplewiki, specieswiki, sqwiki, svwiki, trwiki, udmwiki, ukwiki, uzwiki, vecwiki, viwiki, vlswiki, warwiki, yiwiki, zhwiki
-Sorbus: https://de.wikipedia.org/wiki/Mehlbeeren
-Syringa: https://de.wikipedia.org/wiki/Flieder
-Syringa: not found, site keys:
-Tamarix: https://de.wikipedia.org/wiki/Tamarisken
-Taxus: https://de.wikipedia.org/wiki/Eiben
-Tetradium: https://de.wikipedia.org/wiki/Stinkeschen
-Thuja: https://de.wikipedia.org/wiki/Lebensbäume (Gattung)
-Tilia: https://de.wikipedia.org/wiki/Linden (Gattung)
-Ulmus: https://de.wikipedia.org/wiki/Ulmen
-Ulmus: not found, site keys: cebwiki, specieswiki
-Zelkova: https://de.wikipedia.org/wiki/Zelkoven
+{
+    "genus": [{
+            "name": "Abies",
+            "labelGer": "Tannen",
+            "wikidata": "https://www.wikidata.org/wiki/Q25350",
+            "wikipedia": "https://de.wikipedia.org/wiki/Tannen",
+            "image": "https://commons.wikimedia.org/wiki/File:Abies%20alba%20Wis%C5%82a%202%2Ejpg"
+        }, {
+            "name": "Acer",
+            "labelGer": "Ahorne",
+            "wikidata": "https://www.wikidata.org/wiki/Q42292",
+            "wikipedia": "https://de.wikipedia.org/wiki/Ahorne",
+            "image": "https://commons.wikimedia.org/wiki/File:Acer%20pseudoplatanus%20002%2Ejpg"
+        }, {
+            "name": "Aesculus",
+            "labelGer": "Rosskastanien",
+            "wikidata": "https://www.wikidata.org/wiki/Q158752",
+            "wikipedia": "https://de.wikipedia.org/wiki/Rosskastanien",
+            "image": "https://commons.wikimedia.org/wiki/File:Horse%2Dchestnut%20800%2Ejpg"
+        }, {
+            "name": "Ailanthus",
+            "labelGer": "Götterbäume",
+            "wikidata": "https://www.wikidata.org/wiki/Q160580",
+            "wikipedia": "https://de.wikipedia.org/wiki/G%C3%B6tterb%C3%A4ume",
+            "image": "https://commons.wikimedia.org/wiki/File:Ailanthus%20altissima1%2Ejpg"
+        }, {
+            "name": "Alnus",
+            "labelGer": "Erlen",
+            "wikidata": "https://www.wikidata.org/wiki/Q25239",
+            "wikipedia": "https://de.wikipedia.org/wiki/Erlen%20%28Gattung%29",
+            "image": "https://commons.wikimedia.org/wiki/File:Tagalder8139%2Ejpg"
+        }, {
+            "name": "Amelanchier",
+            "labelGer": "Felsenbirnen",
+            "wikidata": "https://www.wikidata.org/wiki/Q156957",
+            "wikipedia": "https://de.wikipedia.org/wiki/Felsenbirnen",
+            "image": "https://commons.wikimedia.org/wiki/File:Amelanchier%20grandiflora2%2Ejpg"
+        }, {
+            "name": "Betula",
+            "labelGer": "Birken",
+            "wikidata": "https://www.wikidata.org/wiki/Q25243",
+            "wikipedia": "https://de.wikipedia.org/wiki/Birken",
+            "image": "https://commons.wikimedia.org/wiki/File:Betula%20pendula%20001%2Ejpg"
+        }, {
+            "name": "Carpinus",
+            "labelGer": "Hainbuchen",
+            "wikidata": "https://www.wikidata.org/wiki/Q158513",
+            "wikipedia": "https://de.wikipedia.org/wiki/Hainbuchen",
+            "image": "https://commons.wikimedia.org/wiki/File:Carpinus%20foliage%2Ejpg"
+        }, {
+            "name": "Castanea",
+            "labelGer": "Kastanien",
+            "wikidata": "https://www.wikidata.org/wiki/Q129324",
+            "wikipedia": "https://de.wikipedia.org/wiki/Kastanien",
+            "image": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2taignier%20120807%201%2Ejpg"
+        }, {
+            "name": "Catalpa",
+            "labelGer": "Trompetenbäume",
+            "wikidata": "https://www.wikidata.org/wiki/Q158072",
+            "wikipedia": "https://de.wikipedia.org/wiki/Trompetenb%C3%A4ume",
+            "image": "https://commons.wikimedia.org/wiki/File:Cataspec%2Ejpg"
+        }, {
+            "name": "Celtis",
+            "labelGer": "Zürgelbäume",
+            "wikidata": "https://www.wikidata.org/wiki/Q248582",
+            "wikipedia": "https://de.wikipedia.org/wiki/Z%C3%BCrgelb%C3%A4ume",
+            "image": "https://commons.wikimedia.org/wiki/File:Celtis%20australis%2020150404%20a%2Ejpg"
+        }, {
+            "name": "Cornus",
+            "labelGer": "Hartriegel",
+            "wikidata": "https://www.wikidata.org/wiki/Q159545",
+            "wikipedia": "https://de.wikipedia.org/wiki/Hartriegel",
+            "image": "https://commons.wikimedia.org/wiki/File:Cornus%20mas3%2Ejpg"
+        }, {
+            "name": "Corylus",
+            "labelGer": "Hasel",
+            "wikidata": "https://www.wikidata.org/wiki/Q145889",
+            "wikipedia": "https://de.wikipedia.org/wiki/Haseln",
+            "image": "https://commons.wikimedia.org/wiki/File:Corylus%20avellana%200001%2EJPG"
+        }, {
+            "name": "Crataegus",
+            "labelGer": "Weißdorne",
+            "wikidata": "https://www.wikidata.org/wiki/Q132557",
+            "wikipedia": "https://de.wikipedia.org/wiki/Wei%C3%9Fdorne",
+            "image": "https://commons.wikimedia.org/wiki/File:Crataegus%2C%20various%20species%2C%20fruit%2Ejpg"
+        }, {
+            "name": "Cydonia",
+            "labelGer": "Cydonia",
+            "wikidata": "https://www.wikidata.org/wiki/Q13418162",
+            "wikipedia": "https://de.wikipedia.org/wiki/Quitte",
+            "image": "https://commons.wikimedia.org/wiki/File:Quince%20flowers%2Ejpg"
+        }, {
+            "name": "Elaeagnus",
+            "labelGer": "Ölweiden",
+            "wikidata": "https://www.wikidata.org/wiki/Q161042",
+            "wikipedia": "https://de.wikipedia.org/wiki/%C3%96lweiden",
+            "image": "https://commons.wikimedia.org/wiki/File:Elaeagnus%20commutata%20USDA%2Ejpg"
+        }, {
+            "name": "Eriolobus",
+            "labelGer": "Eriolobus",
+            "wikidata": "https://www.wikidata.org/wiki/Q5224498",
+            "wikipedia": "https://en.wikipedia.org/wiki/Eriolobus",
+            "image": "https://commons.wikimedia.org/wiki/File:Eriolobus%20trilobatus%2Ejpg"
+        }, {
+            "name": "Fagus",
+            "labelGer": "Buchen",
+            "wikidata": "https://www.wikidata.org/wiki/Q25403",
+            "wikipedia": "https://de.wikipedia.org/wiki/Buchen",
+            "image": "https://commons.wikimedia.org/wiki/File:Buche%2C%20Oberkleinich%2Ejpg"
+        }, {
+            "name": "Fraxinus",
+            "labelGer": "Eschen",
+            "wikidata": "https://www.wikidata.org/wiki/Q128887",
+            "wikipedia": "https://de.wikipedia.org/wiki/Eschen%20%28Pflanzengattung%29",
+            "image": "https://commons.wikimedia.org/wiki/File:Fraxinus%20excelsior%2Ejpg"
+        }, {
+            "name": "Ginkgo",
+            "labelGer": "Ginkgo",
+            "wikidata": "https://www.wikidata.org/wiki/Q149461",
+            "wikipedia": "https://de.wikipedia.org/wiki/Ginkgo",
+            "image": "https://commons.wikimedia.org/wiki/File:Gingko%20biloba2%2Ejpg"
+        }, {
+            "name": "Gleditsia",
+            "labelGer": "Gleditschien",
+            "wikidata": "https://www.wikidata.org/wiki/Q161250",
+            "wikipedia": "https://de.wikipedia.org/wiki/Gleditschien",
+            "image": "https://commons.wikimedia.org/wiki/File:Gleditsia%20triacanthos01%2EJPEG"
+        }, {
+            "name": "Hippophae",
+            "labelGer": "Hippophae",
+            "wikidata": "https://www.wikidata.org/wiki/Q5686857",
+            "wikipedia": "https://de.wikipedia.org/wiki/Sanddorne",
+            "image": "https://commons.wikimedia.org/wiki/File:Hippophae%20rhamnoides%2D01%20%28xndr%29%2EJPG"
+        }, {
+            "name": "Ilex",
+            "labelGer": "Stechpalmen",
+            "wikidata": "https://www.wikidata.org/wiki/Q117085",
+            "wikipedia": "https://de.wikipedia.org/wiki/Stechpalmen",
+            "image": "https://commons.wikimedia.org/wiki/File:Ilex%20paraguariensis%20%2D%20K%C3%B6hler%E2%80%93s%20Medizinal%2DPflanzen%2D074%2Ejpg"
+        }, {
+            "name": "Juglans",
+            "labelGer": "Walnüsse",
+            "wikidata": "https://www.wikidata.org/wiki/Q2453469",
+            "wikipedia": "https://de.wikipedia.org/wiki/Waln%C3%BCsse",
+            "image": "https://commons.wikimedia.org/wiki/File:Juglans%20major%20Morton%2Ejpg"
+        }, {
+            "name": "Juniperus",
+            "labelGer": "Wacholder",
+            "wikidata": "https://www.wikidata.org/wiki/Q25662",
+            "wikipedia": "https://de.wikipedia.org/wiki/Wacholder",
+            "image": "https://commons.wikimedia.org/wiki/File:Juniperus%20phoenicea%20berries%2Ejpg"
+        }, {
+            "name": "Koelreuteria",
+            "labelGer": "Koelreuteria",
+            "wikidata": "https://www.wikidata.org/wiki/Q132703",
+            "wikipedia": "https://de.wikipedia.org/wiki/Koelreuteria",
+            "image": "https://commons.wikimedia.org/wiki/File:Koelreutheria%2Dpaniculata%2EJPG"
+        }, {
+            "name": "Larix",
+            "labelGer": "Lärchen",
+            "wikidata": "https://www.wikidata.org/wiki/Q25618",
+            "wikipedia": "https://de.wikipedia.org/wiki/L%C3%A4rchen",
+            "image": "https://commons.wikimedia.org/wiki/File:M%C3%A9l%C3%A8ze%20en%20Automne%2EJPG"
+        }, {
+            "name": "Liquidambar",
+            "labelGer": "Amberbäume",
+            "wikidata": "https://www.wikidata.org/wiki/Q183543",
+            "wikipedia": "https://de.wikipedia.org/wiki/Amberb%C3%A4ume",
+            "image": "https://commons.wikimedia.org/wiki/File:Liquidambaseedpod%2EJPG"
+        }, {
+            "name": "Liriodendron",
+            "labelGer": "Tulpenbäume",
+            "wikidata": "https://www.wikidata.org/wiki/Q157236",
+            "wikipedia": "https://de.wikipedia.org/wiki/Tulpenb%C3%A4ume",
+            "image": "https://commons.wikimedia.org/wiki/File:Liriodendron%20tulipifera%2Ejpg"
+        }, {
+            "name": "Magnolia",
+            "labelGer": "Magnolien",
+            "wikidata": "https://www.wikidata.org/wiki/Q157017",
+            "wikipedia": "https://de.wikipedia.org/wiki/Magnolien",
+            "image": "https://commons.wikimedia.org/wiki/File:Magnolia%20wieseneri%2Ejpg"
+        }, {
+            "name": "Malus",
+            "labelGer": "Äpfel",
+            "wikidata": "https://www.wikidata.org/wiki/Q104819",
+            "wikipedia": "https://de.wikipedia.org/wiki/%C3%84pfel",
+            "image": "https://commons.wikimedia.org/wiki/File:Malus%20sargentii%2Ejpg"
+        }, {
+            "name": "Mespilus",
+            "labelGer": "Mispeln",
+            "wikidata": "https://www.wikidata.org/wiki/Q148723",
+            "wikipedia": "https://de.wikipedia.org/wiki/Mispel",
+            "image": "https://commons.wikimedia.org/wiki/File:Medlar%20blossom%2EJPG"
+        }, {
+            "name": "Metasequoia",
+            "labelGer": "Metasequoia",
+            "wikidata": "https://www.wikidata.org/wiki/Q1825748",
+            "wikipedia": "https://de.wikipedia.org/wiki/Urweltmammutbaum",
+            "image": "https://commons.wikimedia.org/wiki/File:Metasequoia%20glyptostroboides%2Ejpg"
+        }, {
+            "name": "Morus",
+            "labelGer": "Morus",
+            "wikidata": "https://www.wikidata.org/wiki/Q1651414",
+            "wikipedia": "https://en.wikipedia.org/wiki/Gannet",
+            "image": "https://commons.wikimedia.org/wiki/File:Morus%20bassanus%209%2Ejpg"
+        }, {
+            "name": "Ostrya",
+            "labelGer": "Hopfenbuchen",
+            "wikidata": "https://www.wikidata.org/wiki/Q605290",
+            "wikipedia": "https://de.wikipedia.org/wiki/Hopfenbuchen",
+            "image": "https://commons.wikimedia.org/wiki/File:Ostrya%20virginiana%2Ejpg"
+        }, {
+            "name": "Picea",
+            "labelGer": "Fichten",
+            "wikidata": "https://www.wikidata.org/wiki/Q26782",
+            "wikipedia": "https://de.wikipedia.org/wiki/Fichten",
+            "image": "https://commons.wikimedia.org/wiki/File:Picea%20abies%2Ejpg"
+        }, {
+            "name": "Pinus",
+            "labelGer": "Kiefern",
+            "wikidata": "https://www.wikidata.org/wiki/Q12024",
+            "wikipedia": "https://de.wikipedia.org/wiki/Kiefern",
+            "image": "https://commons.wikimedia.org/wiki/File:Pinus%20sylvestris%20Grytdalen%2002%2Ejpg"
+        }, {
+            "name": "Platanus",
+            "labelGer": "Platanen",
+            "wikidata": "https://www.wikidata.org/wiki/Q163025",
+            "wikipedia": "https://de.wikipedia.org/wiki/Platanen",
+            "image": "https://commons.wikimedia.org/wiki/File:Platanus%20orientalis%2DIMG%205938%2Ejpg"
+        }, {
+            "name": "Populus",
+            "labelGer": "Pappeln",
+            "wikidata": "https://www.wikidata.org/wiki/Q25356",
+            "wikipedia": "https://de.wikipedia.org/wiki/Pappeln",
+            "image": "https://commons.wikimedia.org/wiki/File:PopulusNigra3%2Ejpg"
+        }, {
+            "name": "Prunus",
+            "labelGer": "Prunus",
+            "wikidata": "https://www.wikidata.org/wiki/Q190545",
+            "wikipedia": "https://de.wikipedia.org/wiki/Prunus",
+            "image": "https://commons.wikimedia.org/wiki/File:Fr%C3%BChling%20bl%C3%BChender%20Kirschenbaum%2Ejpg"
+        }, {
+            "name": "Pseudotsuga",
+            "labelGer": "Douglasien",
+            "wikidata": "https://www.wikidata.org/wiki/Q158771",
+            "wikipedia": "https://de.wikipedia.org/wiki/Douglasien",
+            "image": "https://commons.wikimedia.org/wiki/File:Pseudotsuga%20menziesii%2028236%2EJPG"
+        }, {
+            "name": "Pyracantha",
+            "labelGer": "Feuerdorn",
+            "wikidata": "https://www.wikidata.org/wiki/Q157748",
+            "wikipedia": "https://de.wikipedia.org/wiki/Feuerdorn",
+            "image": "https://commons.wikimedia.org/wiki/File:Red%20pommes%20of%20Firethorn%20%28Pyracantha%29%2Ejpg"
+        }, {
+            "name": "Pyrus",
+            "labelGer": "Birnen",
+            "wikidata": "https://www.wikidata.org/wiki/Q434",
+            "wikipedia": "https://de.wikipedia.org/wiki/Birnen",
+            "image": "https://commons.wikimedia.org/wiki/File:Pears%2Ejpg"
+        }, {
+            "name": "Quercus",
+            "labelGer": "Eichen",
+            "wikidata": "https://www.wikidata.org/wiki/Q12004",
+            "wikipedia": "https://de.wikipedia.org/wiki/Eichen",
+            "image": "https://commons.wikimedia.org/wiki/File:Quercus%20robur%2Ejpg"
+        }, {
+            "name": "Rhus",
+            "labelGer": "Rhus",
+            "wikidata": "https://www.wikidata.org/wiki/Q157649",
+            "wikipedia": "https://de.wikipedia.org/wiki/Rhus",
+            "image": "https://commons.wikimedia.org/wiki/File:Rhus%2Dtyphina%2EJPG"
+        }, {
+            "name": "Robinia",
+            "labelGer": "Robinien",
+            "wikidata": "https://www.wikidata.org/wiki/Q472943",
+            "wikipedia": "https://de.wikipedia.org/wiki/Robinien",
+            "image": "https://commons.wikimedia.org/wiki/File:Robina9146%2EJPG"
+        }, {
+            "name": "Salix",
+            "labelGer": "Weiden",
+            "wikidata": "https://www.wikidata.org/wiki/Q36050",
+            "wikipedia": "https://de.wikipedia.org/wiki/Weiden%20%28Gattung%29",
+            "image": "https://commons.wikimedia.org/wiki/File:Salix%20alba%20Morton%2Ejpg"
+        }, {
+            "name": "Sambucus",
+            "labelGer": "Holunder",
+            "wikidata": "https://www.wikidata.org/wiki/Q131448",
+            "wikipedia": "https://de.wikipedia.org/wiki/Holunder",
+            "image": "https://commons.wikimedia.org/wiki/File:Sambucus%20nigra0%2Ejpg"
+        }, {
+            "name": "Sophora",
+            "labelGer": "Sophora",
+            "wikidata": "https://www.wikidata.org/wiki/Q309213",
+            "wikipedia": "https://en.wikipedia.org/wiki/Sophora",
+            "image": "https://commons.wikimedia.org/wiki/File:Starr%20081014%2D0282%20Sophora%20chrysophylla%2Ejpg"
+        }, {
+            "name": "Sorbus",
+            "labelGer": "Mehlbeeren",
+            "wikidata": "https://www.wikidata.org/wiki/Q157964",
+            "wikipedia": "https://de.wikipedia.org/wiki/Mehlbeeren",
+            "image": "https://commons.wikimedia.org/wiki/File:Sorbus%20aucuparia%20aka%20rowan%2Ejpg"
+        }, {
+            "name": "Syringa",
+            "labelGer": "Flieder",
+            "wikidata": "https://www.wikidata.org/wiki/Q157449",
+            "wikipedia": "https://de.wikipedia.org/wiki/Flieder",
+            "image": "https://commons.wikimedia.org/wiki/File:Stockholm%2Dlilac%2Ejpg"
+        }, {
+            "name": "Tamarix",
+            "labelGer": "Tamarisken",
+            "wikidata": "https://www.wikidata.org/wiki/Q164163",
+            "wikipedia": "https://de.wikipedia.org/wiki/Tamarisken",
+            "image": "https://commons.wikimedia.org/wiki/File:Tamarix%20aphylla%2Ejpg"
+        }, {
+            "name": "Taxus",
+            "labelGer": "Eiben",
+            "wikidata": "https://www.wikidata.org/wiki/Q27355",
+            "wikipedia": "https://de.wikipedia.org/wiki/Eiben",
+            "image": "https://commons.wikimedia.org/wiki/File:Taxus%20baccata%20MHNT%2Ejpg"
+        }, {
+            "name": "Tetradium",
+            "labelGer": "Stinkeschen",
+            "wikidata": "https://www.wikidata.org/wiki/Q1498322",
+            "wikipedia": "https://de.wikipedia.org/wiki/Stinkeschen",
+            "image": "https://commons.wikimedia.org/wiki/File:Evodia%20hupehensis%20a1%2Ejpg"
+        }, {
+            "name": "Thuja",
+            "labelGer": "Lebensbäume",
+            "wikidata": "https://www.wikidata.org/wiki/Q147255",
+            "wikipedia": "https://de.wikipedia.org/wiki/Lebensb%C3%A4ume%20%28Gattung%29",
+            "image": "https://commons.wikimedia.org/wiki/File:Thuja%20occidentalis%20%28eastern%20arbor%20vitae%20tree%29%20%28Natural%20Bridge%20State%20Park%2C%20Virginia%2C%20USA%29%202%20%2827804946205%29%2Ejpg"
+        }, {
+            "name": "Tilia",
+            "labelGer": "Linden",
+            "wikidata": "https://www.wikidata.org/wiki/Q127849",
+            "wikipedia": "https://de.wikipedia.org/wiki/Linden%20%28Gattung%29",
+            "image": "https://commons.wikimedia.org/wiki/File:Tilia%20tomentosa%2Ejpg"
+        }, {
+            "name": "Ulmus",
+            "labelGer": "Ulmen",
+            "wikidata": "https://www.wikidata.org/wiki/Q131113",
+            "wikipedia": "https://de.wikipedia.org/wiki/Ulmen",
+            "image": "https://commons.wikimedia.org/wiki/File:East%20Coker%20elm%2C%202%2Ejpg"
+        }, {
+            "name": "Zelkova",
+            "labelGer": "Zelkoven",
+            "wikidata": "https://www.wikidata.org/wiki/Q187454",
+            "wikipedia": "https://de.wikipedia.org/wiki/Zelkoven",
+            "image": "https://commons.wikimedia.org/wiki/File:Zelkova%20serrata6%2Ejpg"
+        }
+    ]
+}
