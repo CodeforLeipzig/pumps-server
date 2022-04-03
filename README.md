@@ -44,3 +44,4 @@
  * [Street tree count changes April 2021 to March 2022 in Leipzig splitted by species](https://datawrapper.dwcdn.net/yUBUD/1/)
  * [Lost street trees between April 2021 and April 2022](https://sannsie.carto.com/builder/ea1519a7-a58d-46a1-bd3a-286218c357d8/embed)
  * [Replaced street trees between April 2021 and April 2022](https://sannsie.carto.com/builder/2ad5f54c-30b1-455b-84c7-9a51302523ea/embed)
+ * [New street trees between January 2021 and April 2022](https://sannsie.carto.com/builder/5c4efdcf-0fd6-49f9-b8cb-511399eb3c5e/embed)
