@@ -50,7 +50,7 @@ class GitHistoryWalkerModuleTest: BaseTest() {
             val trees: PointGeojsonFeatureCollection<TreeTO> = objectMapper.readValue(content, objectMapper.typeFactory.constructParametricType(
                 PointGeojsonFeatureCollection::class.java, TreeTO::class.java
             ))
-            treeService.importTrees(trees.features.map { it.properties }.map { it.timestamp = targetFileLog.commitTime.toLong().times(1000); it }.filter { it.timestamp != null && it.timestamp!! > 1648497849000 })
+            treeService.importTrees(trees.features.map { it.properties }.map { it.timestamp = targetFileLog.commitTime.toLong().times(1000); it }.filter { it.timestamp != null && it.timestamp!! > 1650311601000 })
             //collectedTrees.addAll(trees.features.map { it.properties })
             //collectedTreeRows.add("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))};${(trees.features.size)}")
             //println("${sdf.format(Date(targetFileLog.commitTime.toLong().times(1000)))}: ${(trees.features.size)} trees")

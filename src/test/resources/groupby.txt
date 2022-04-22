@@ -9,3 +9,20 @@ from   maxTimestamp
 inner join tree_history t
 on         t.standortnr = maxTimestamp.standortnr
 and        t.timestamp = maxTimestamp.timestamp
+
+
+## by ortsteil total
+
+with maxTimestamp as
+(
+    select standortnr, max(timestamp) timestamp
+    from tree_history
+    group by standortnr
+)
+select count(*) as anzahl, t.ortsteil
+from   maxTimestamp
+inner join tree_history t
+on         t.standortnr = maxTimestamp.standortnr
+and        t.timestamp = maxTimestamp.timestamp
+group by t.ortsteil
+order by t.ortsteil

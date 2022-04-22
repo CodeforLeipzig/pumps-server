@@ -115,3 +115,14 @@ and t2.standortnr not in (
  select t1.standortnr from tree_history t1
  where to_char(to_timestamp(t1.timestamp/1000), 'yyyy-mm-dd') like '2022-04-01'
 )
+
+# timestamps distinct
+
+with timestamps as
+(
+    select to_char(to_timestamp(t2.timestamp/1000), 'yyyy-mm-dd') as ts
+    from tree_history t2
+)
+select distinct(ts)
+from   timestamps
+order by ts desc
