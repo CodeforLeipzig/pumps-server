@@ -1,6 +1,6 @@
 package de.oklab.l.pumps
 
-import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.apache.catalina.util.URLEncoder
 import org.eclipse.rdf4j.repository.sparql.SPARQLRepository
 import org.junit.jupiter.api.Test
@@ -9,7 +9,7 @@ import org.wikidata.wdtk.wikibaseapi.WikibaseDataFetcher
 import java.io.File
 import java.io.FileWriter
 
-val objectMapper = ObjectMapper()
+val objectMapper = jacksonObjectMapper()
 
 class WikiDataTest {
     val urlEncoder = URLEncoder()
@@ -341,121 +341,171 @@ class WikiDataTest {
 
     @Test
     fun testGenus() {
-        val foundEntries = findEntries(gattungen)
-        FileWriter(File("D://found-genus.json")).use {
-            it.write("""
-                {
-                    "genus": [
-                        ${foundEntries.joinToString(",")}                    
-                    ]
-                }
-            """.trimIndent())
+        val category = "genus"
+        val file = File("D://found-$category.json")
+        val existing = file.exists() && file.isFile
+        val foundEntries = if (existing) {
+            objectMapper.readValue(File("D://found-$category.json"), WikiEntries::class.java)
+        } else {
+            findEntries(gattungen)
         }
+        writeFiles(foundEntries, category, !existing)
     }
 
-    private fun findEntries(names: List<String>): MutableList<String> {
-        val foundEntries = mutableListOf<String>()
+    private fun writeSqlInserts(foundEntries: WikiEntries, category: String, file: String) {
+        writeFile(file, """
+            INSERT INTO public.trees_metadata(latin_name, category_type, wikipedia, wikicommons, wikidata, german_label)
+            VALUES
+            ${foundEntries.data.joinToString(",\n") { toInsertStatement(it, category) }}
+            ON CONFLICT (latin_name) DO NOTHING;
+        """.trimIndent())
+    }
+
+    private fun writeFile(file: String, content: String) =
+        FileWriter(File(file), Charsets.UTF_8).use { fw -> fw.write(content) }
+
+    private fun toInsertStatement(entry: WikiEntry, category: String): String {
+        val values = mutableListOf(entry.name, category, entry.wikipedia, entry.image, entry.wikidata, entry.labelGer)
+        return "(${values.joinToString(", ") { if (it == null) "null" else "'${it.replace("'", "''")}'" }})"
+    }
+
+    private fun findEntries(names: List<String>): WikiEntries {
+        val foundEntries = mutableListOf<WikiEntry>()
         for (name in names) {
-
-            val queryScientificName = """SELECT DISTINCT ?item ?itemLabel WHERE {
-      SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
-      {
-        SELECT DISTINCT ?item WHERE {
-          ?item p:P225 ?statement0.
-          ?statement0 (ps:P225) "$name".
+            val wikiEntry = getWikiEntry(name)
+            val wikiEntryToUse = if (wikiEntry.wikidata == null) {
+                val index = name.indexOf(" '")
+                if (index > 0) {
+                    val alternativeName = name.substring(0, index)
+                    val alternativeWikiEntry = getWikiEntry(alternativeName)
+                    if (alternativeWikiEntry.wikidata != null) alternativeWikiEntry else wikiEntry
+                } else wikiEntry
+            } else wikiEntry
+            foundEntries.add(wikiEntryToUse)
         }
-        LIMIT 100
-      }
-    }"""
-            val wikiEntry = WikiEntry(name)
-            try {
-                //repo.connection.prepareTupleQuery(queryScientificName).evaluate(SPARQLResultsJSONWriter(System.out))
-                val result = repo.connection.prepareTupleQuery(queryScientificName).evaluate()
-                if (result.hasNext()) {
-                    while (result.hasNext()) {
-                        val entry = result.next()
-                        val wikiDataLabel = entry.getBinding("itemLabel").value.stringValue()
-                        wikiEntry.wikidata = "https://www.wikidata.org/wiki/${wikiDataLabel}"
-                        val wikiDataEntry = wbdf.getEntityDocument(wikiDataLabel)
-                        if (wikiDataEntry is ItemDocument) {
-                            // P105 == taxon rank
-                            val taxonStatements =
-                                wikiDataEntry.statementGroups.filter { group -> group.find { it.mainSnak.propertyId.id == "P105" } != null }
-                            if (taxonStatements.isEmpty()) continue
-                            wikiEntry.labelGer = wikiDataEntry.labels["de"]?.text
-                            val wikipediaPageTitle = wikiDataEntry.siteLinks["dewiki"]?.pageTitle
-                            if (wikipediaPageTitle != null) {
-                                wikiEntry.wikipedia = "https://de.wikipedia.org/wiki/${
-                                    urlEncoder.encode(
-                                        wikipediaPageTitle,
-                                        Charsets.UTF_8
-                                    )
-                                }"
-                            } else {
-                                val wikipediaPageEnTitle = wikiDataEntry.siteLinks["enwiki"]?.pageTitle
-                                if (wikipediaPageEnTitle != null) {
-                                    wikiEntry.wikipedia = "https://en.wikipedia.org/wiki/${
-                                        urlEncoder.encode(
-                                            wikipediaPageEnTitle,
-                                            Charsets.UTF_8
-                                        )
-                                    }"
-                                }
-                            }
-                            // P18 == image
-                            val statements =
-                                wikiDataEntry.statementGroups.filter { group -> group.find { it.mainSnak.propertyId.id == "P18" } != null }
-                            val image =
-                                if (statements.isEmpty()) null else statements[0].statements[0].mainSnak.accept(object :
-                                    SnakVisitor<String?> {
-                                    override fun visit(snak: ValueSnak?): String? {
-                                        val value = snak?.value
-                                        if (value is StringValue) {
-                                            return value.string
-                                        }
-                                        return snak?.value.toString()
-                                    }
-
-                                    override fun visit(snak: SomeValueSnak?): String? {
-                                        return null
-                                    }
-
-                                    override fun visit(snak: NoValueSnak?): String? {
-                                        return null
-                                    }
-                                })
-                            if (image != null) {
-                                wikiEntry.image = "https://commons.wikimedia.org/wiki/File:${
-                                    urlEncoder.encode(
-                                        image,
-                                        Charsets.UTF_8
-                                    )
-                                }"
-                            }
-                        }
-                        if (wikiEntry.wikipedia != null) break
-                    }
-                }
-            } catch (exception: Exception) {
-                exception.printStackTrace()
-            }
-            foundEntries.add(wikiEntry.toJson())
-        }
-        return foundEntries
+        return WikiEntries(foundEntries)
     }
+
+    private fun getWikiEntry(name: String): WikiEntry {
+        val queryScientificName = """SELECT DISTINCT ?item ?itemLabel WHERE {
+          SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE]". }
+          {
+            SELECT DISTINCT ?item WHERE {
+              ?item p:P225 ?statement0.
+              ?statement0 (ps:P225) "$name".
+            }
+            LIMIT 100
+          }
+        }"""
+        val wikiEntry = WikiEntry(name)
+        try {
+            //repo.connection.prepareTupleQuery(queryScientificName).evaluate(SPARQLResultsJSONWriter(System.out))
+            val result = repo.connection.prepareTupleQuery(queryScientificName).evaluate()
+            if (result.hasNext()) {
+                while (result.hasNext()) {
+                    val entry = result.next()
+                    val wikiDataLabel = entry.getBinding("itemLabel").value.stringValue()
+                    wikiEntry.wikidata = "https://www.wikidata.org/wiki/${wikiDataLabel}"
+                    val wikiDataEntry = wbdf.getEntityDocument(wikiDataLabel)
+                    if (wikiDataEntry is ItemDocument) {
+                        // P105 == taxon rank
+                        val taxonStatements = wikiDataEntry.statementGroups.filter { group ->
+                            group.find { it.mainSnak.propertyId.id == "P105" } != null
+                        }
+                        if (taxonStatements.isEmpty()) continue
+                        wikiEntry.labelGer = wikiDataEntry.labels["de"]?.text
+                        wikiEntry.wikipedia = getWikipediaPageTitle(wikiDataEntry)
+                        wikiEntry.image = getImage(wikiDataEntry)
+                    }
+                    if (wikiEntry.wikipedia != null) break
+                }
+            }
+        } catch (exception: Exception) {
+            exception.printStackTrace()
+        }
+        return wikiEntry
+    }
+
+    private fun getImage(wikiDataEntry: ItemDocument): String? {
+        // P18 == image
+        val statements = wikiDataEntry.statementGroups.filter { group ->
+            group.find { it.mainSnak.propertyId.id == "P18" } != null
+        }
+        val image = getImage(statements)
+        return if (image != null) {
+            "https://commons.wikimedia.org/wiki/File:${
+                urlEncoder.encode(
+                    image,
+                    Charsets.UTF_8
+                )
+            }"
+        } else null
+    }
+
+    private fun getWikipediaPageTitle(wikiDataEntry: ItemDocument): String? {
+        val wikipediaPageTitle = wikiDataEntry.siteLinks["dewiki"]?.pageTitle
+        return if (wikipediaPageTitle != null) {
+            "https://de.wikipedia.org/wiki/${
+                urlEncoder.encode(
+                    wikipediaPageTitle,
+                    Charsets.UTF_8
+                )
+            }"
+        } else {
+            val wikipediaPageEnTitle = wikiDataEntry.siteLinks["enwiki"]?.pageTitle
+            if (wikipediaPageEnTitle != null) {
+                "https://en.wikipedia.org/wiki/${
+                    urlEncoder.encode(
+                        wikipediaPageEnTitle,
+                        Charsets.UTF_8
+                    )
+                }"
+            } else null
+        }
+    }
+
+    private fun getImage(statements: List<StatementGroup>) =
+        if (statements.isEmpty()) null else statements[0].statements[0].mainSnak.accept(object :
+            SnakVisitor<String?> {
+            override fun visit(snak: ValueSnak?): String? {
+                val value = snak?.value
+                if (value is StringValue) {
+                    return value.string
+                }
+                return snak?.value.toString()
+            }
+
+            override fun visit(snak: SomeValueSnak?): String? {
+                return null
+            }
+
+            override fun visit(snak: NoValueSnak?): String? {
+                return null
+            }
+        })
 
     @Test
     fun testSpecies() {
-        val foundEntries = findEntries(species)
-        FileWriter(File("D://found-species.json")).use {
-            it.write("""
-                {
-                    "species": [
-                        ${foundEntries.joinToString(",")}                    
-                    ]
-                }
-            """.trimIndent())
+        val category = "species"
+        val file = File("D://found-$category.json")
+        val existing = file.exists() && file.isFile
+        val foundEntries = if (existing) {
+            objectMapper.readValue(file, WikiEntries::class.java)
+        } else {
+            findEntries(species)
         }
+        writeFiles(foundEntries, category, !existing)
+    }
+
+    private fun writeFiles(
+        foundEntries: WikiEntries,
+        category: String,
+        writeJson: Boolean = false
+    ) {
+        if (writeJson) {
+            writeFile("D://found-$category.json", foundEntries.toJson())
+        }
+        writeSqlInserts(foundEntries, category, "D://found-$category.sql")
     }
 }
 
@@ -465,6 +515,8 @@ data class WikiEntry(
     var wikidata: String? = null,
     var wikipedia: String? = null,
     var image: String? = null
-) {
+)
+
+data class WikiEntries(val data: List<WikiEntry>) {
     fun toJson(): String = objectMapper.writeValueAsString(this)!!
 }
