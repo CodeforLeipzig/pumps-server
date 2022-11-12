@@ -37,7 +37,7 @@
    * [Leaflet](https://leafletjs.com)
 
 ## Charts
- * [Street tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/7/)
+ * [Street tree count in Leipzig](https://datawrapper.dwcdn.net/IPrHb/8/)
  * [Street tree count in Leipzig splitted by districts](https://datawrapper.dwcdn.net/ifuls/2/)
  * [Street tree count changes April 2021 to March 2022 in Leipzig splitted by districts](https://datawrapper.dwcdn.net/uuNlj/1/)
  * [Street tree count in Leipzig splitted by species](https://datawrapper.dwcdn.net/fXwZM/1/)
