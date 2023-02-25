@@ -1,12 +1,12 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id("org.springframework.boot") version "2.6.2"
+	id("org.springframework.boot")
 	id("io.spring.dependency-management") version "1.0.11.RELEASE"
-	kotlin("jvm") version "1.6.10"
-	kotlin("plugin.spring") version "1.6.10"
-	kotlin("plugin.jpa") version "1.6.10"
-	//id("com.netflix.dgs.codegen") version "5.1.16"
+	kotlin("jvm")
+	kotlin("plugin.spring")
+	kotlin("plugin.jpa")
+	//id("com.netflix.dgs.codegen")
 }
 
 group = "de.oklab.l"
@@ -14,39 +14,42 @@ version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 repositories {
+	maven { url = uri("https://repo.osgeo.org/repository/release/") }
 	mavenCentral()
 }
 
 dependencies {
-	implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:4.9.15"))
-	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter")
-	implementation("org.springframework.boot:spring-boot-starter-actuator")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-	implementation("org.springframework.boot:spring-boot-starter-data-rest")
-	implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
-	implementation("org.springframework.boot:spring-boot-starter-security")
-	implementation("org.springframework.boot:spring-boot-starter-validation")
-	implementation("com.graphql-java:graphiql-spring-boot-starter:5.0.2")
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-	implementation("com.bedatadriven:jackson-datatype-jts:2.4")
-	implementation("org.hibernate:hibernate-spatial:5.6.5.Final")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	implementation("org.springframework.session:spring-session-core")
-	implementation("org.eclipse.jgit:org.eclipse.jgit:6.0.0.202111291000-r")
-	implementation("org.eclipse.rdf4j:rdf4j-bom:3.7.5")
-	implementation("org.eclipse.rdf4j:rdf4j-storage:3.7.5")
-	implementation("org.wikidata.wdtk:wdtk-datamodel:0.13.1")
-	implementation("org.wikidata.wdtk:wdtk-rdf:0.13.1")
-	implementation("org.wikidata.wdtk:wdtk-storage:0.13.1")
-	implementation("org.wikidata.wdtk:wdtk-util:0.13.1")
-	implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.6")
-	implementation("com.squareup.okhttp3:okhttp-urlconnection:5.0.0-alpha.6")
-	runtimeOnly("io.micrometer:micrometer-registry-prometheus")
-	runtimeOnly("org.postgresql:postgresql")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.springframework.security:spring-security-test")
+	implementation(platform("com.netflix.graphql.dgs:graphql-dgs-platform-dependencies:_"))
+	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter:_")
+	implementation(Spring.boot.actuator)
+	implementation(Spring.boot.data.jpa)
+	implementation(Spring.boot.data.rest)
+	implementation(Spring.boot.oauth2Client)
+	implementation(Spring.boot.security)
+	implementation(Spring.boot.validation)
+	implementation("com.graphql-java:graphiql-spring-boot-starter:_")
+	implementation(Spring.boot.web)
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:_")
+	implementation("com.bedatadriven:jackson-datatype-jts:_")
+	implementation("org.hibernate:hibernate-spatial:_")
+	implementation("org.jetbrains.kotlin:kotlin-reflect:_")
+	implementation(Kotlin.stdlib.jdk8)
+	implementation("org.springframework.session:spring-session-core:_")
+	implementation("org.eclipse.jgit:org.eclipse.jgit:_")
+	implementation("org.eclipse.rdf4j:rdf4j-bom:_")
+	implementation("org.eclipse.rdf4j:rdf4j-storage:_")
+	implementation("org.wikidata.wdtk:wdtk-datamodel:_")
+	implementation("org.wikidata.wdtk:wdtk-rdf:_")
+	implementation("org.wikidata.wdtk:wdtk-storage:_")
+	implementation("org.wikidata.wdtk:wdtk-util:_")
+	implementation(Square.okHttp3)
+	implementation(Square.okHttp3.urlConnection)
+	implementation("org.geotools:gt-referencing:_")
+
+	runtimeOnly("io.micrometer:micrometer-registry-prometheus:_")
+	runtimeOnly("org.postgresql:postgresql:_")
+	testImplementation(Spring.boot.test)
+	testImplementation(Spring.security.spring_security_test)
 	testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.+")
 }
 
