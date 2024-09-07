@@ -17,25 +17,26 @@ import java.net.URL
 
 class ArcGisTest {
     val testData = mutableMapOf(
-        "Bornaische Straße 3c" to Pair(12.374656, 51.309456),
-        "Huygensstraße" to Pair(12.349901, 51.36657),
-        "Lobstädter Straße 9" to Pair(12.38863, 51.29841),
-        "Waldstraße 48" to Pair(12.35732, 51.34554),
-        "Riesaer Straße 1" to Pair(12.436868, 51.34784),
-        "Krystallpalast Rosa-Luxemburg Ecke Hofmeisterstrasse" to Pair(12.3874, 51.343815),
-        "Wurzner Str. 143" to Pair(12.42677, 51.34355),
-        "Georg-Schumann-Str. 198 (Schachtstraße)" to Pair(12.36019, 51.3638),
-        "Bennigsenstr." to Pair(12.414117, 51.345608),
-        "Ludwigstr. 115" to Pair(12.40026, 51.34663),
-        "Mariannenstr. 91" to Pair(12.41373, 51.3465),
-        "Bruhnsstraße 33" to Pair(12.429632, 51.341137),
-        "Fritz-Seger-Straße" to Pair(12.37124, 51.3586),
-        "Ecke Bautzmannstr. / Eisenbahnstr. 156" to Pair(12.417002, 51.344772),
-        "Dorfplatz Stünz / Julius-Krause-Straße" to Pair(12.43196, 51.33844),
-        "Ecke Eisenbahnstr. / Herrmann-Liebmann-Str. 79." to Pair(12.405784, 51.345387),
-        "Leinestraße (bei Nr. 54)" to Pair(12.41067, 51.28604),
-        "Bürgerstraße" to Pair(12.3926325, 51.28798),
-        "Lindenthalerstr." to Pair(12.36543, 51.35934),
+//        "Bornaische Straße 3c" to Pair(12.374656, 51.309456),
+//        "Huygensstraße" to Pair(12.349901, 51.36657),
+//        "Lobstädter Straße 9" to Pair(12.38863, 51.29841),
+//        "Waldstraße 48" to Pair(12.35732, 51.34554),
+//        "Riesaer Straße 1" to Pair(12.436868, 51.34784),
+//        "Krystallpalast Rosa-Luxemburg Ecke Hofmeisterstrasse" to Pair(12.3874, 51.343815),
+//        "Wurzner Str. 143" to Pair(12.42677, 51.34355),
+//        "Georg-Schumann-Str. 198 (Schachtstraße)" to Pair(12.36019, 51.3638),
+//        "Bennigsenstr." to Pair(12.414117, 51.345608),
+//        "Ludwigstr. 115" to Pair(12.40026, 51.34663),
+//        "Mariannenstr. 91" to Pair(12.41373, 51.3465),
+//        "Bruhnsstraße 33" to Pair(12.429632, 51.341137),
+//        "Fritz-Seger-Straße" to Pair(12.37124, 51.3586),
+//        "Ecke Bautzmannstr. / Eisenbahnstr. 156" to Pair(12.417002, 51.344772),
+//        "Dorfplatz Stünz / Julius-Krause-Straße" to Pair(12.43196, 51.33844),
+//        "Ecke Eisenbahnstr. / Herrmann-Liebmann-Str. 79." to Pair(12.405784, 51.345387),
+//        "Leinestraße (bei Nr. 54)" to Pair(12.41067, 51.28604),
+//        "Bürgerstraße" to Pair(12.3926325, 51.28798),
+//        "Lindenthalerstr." to Pair(12.36543, 51.35934),
+//        "Michael-Kazmierczak-Straße" to Pair(12.37288, 51.36590),
         "Peterskirche" to Pair(12.375439000000142, 51.33070470363751),
     )
 
@@ -49,17 +50,19 @@ class ArcGisTest {
     }
 
     fun executeTest(name: String, coords: Pair<Double, Double>) {
+        //https://gis02.leipzig.de/arcgis2/rest/services/AGOL/Baumstarke_Stadt/MapServer/export?dpi=96&transparent=true&format=png32&layers=show%3A20%2C21%2C22%2C0%2C1&bbox=1377485.7970864736%2C6679893.580389709%2C1377673.9038357115%2C6680081.687138948&bboxSR=102100&imageSR=102100&size=630%2C630&f=image
         val baseUrl = "https://gis02.leipzig.de/arcgis2/rest/services/AGOL/Baumstarke_Stadt/MapServer/20/query"
         val xDiff = 0.5 / 73
         val yDiff = 0.5 / 111
 
         val x = coords.first
         val y = coords.second
+
         val geometry = GeometryDef(
-            xmin = x - xDiff,
-            ymin = y - yDiff,
-            xmax = x + xDiff,
-            ymax = y + yDiff,
+            xmin = 1377485.7970864736,//x - xDiff,
+            ymin = 6679893.580389709,//y - yDiff,
+            xmax = 1377673.9038357115,//x + xDiff,
+            ymax = 6680081.687138948,//y + yDiff,
             spatialReference = SpatialRef(wkid = 4326)
         )
         val geometry3857 = convert4326To3857(geometry)
